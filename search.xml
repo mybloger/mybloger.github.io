@@ -1,15 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HEXO个性化设置</title>
-    <url>/2021/04/26/HEXO%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
+    <title>Hexo搭建0-1</title>
+    <url>/2021/04/25/Hexo%E6%90%AD%E5%BB%BA0-1/</url>
+    <content><![CDATA[<p>搭建个人博客的主流其实是Wordpress,但是它对于一个连gitbash都不懂的小白来说，上手确实更复杂点。<br>同时如果我们的诉求是有一个看上去不错的免费空间，为自己提供一个个性化输出平台，专注于记录。<br>那基于Node开发的Hexo框架，配上Next的极简主题，就是一个很好的选择。</p>
+<blockquote>
+<p>本文价值：理清部署Hexo博客的步骤和障碍</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="准备清单"><a href="#准备清单" class="headerlink" title="准备清单"></a>准备清单</h2><p><strong>准备清单：</strong><br>Github账号<a href="https://github.com/">注册</a><br><strong>下载清单</strong><br><a href="https://git-scm.com/download/win">Git</a><br><a href="https://nodejs.org/en/">Nodjs</a></p>
+<p><strong>参考文件：</strong><br>hexo.io<a href="https://hexo.io/zh-cn/docs/commands.html">指令</a><br><a href="https://hexo.io/zh-cn/docs/setup.html">Hexo官方文档之建站</a><br>Git帮助文档creating a new <a href="https://help.github.com/articles/creating-a-new-repository/">repository</a><br>Jeyzhang<a href="http://www.jeyzhang.com/hexo-github-blog-building.html">博客</a></p>
+<h2 id="遇见的问题"><a href="#遇见的问题" class="headerlink" title="遇见的问题"></a>遇见的问题</h2><ol>
+<li>发布后出现Readme html<br> 注意观察自己github 默认branch 是否是master。</li>
+<li>Git在本地设置需要切换账户，不然会发布没有权限。<br>1）查看现在的账号名<ul>
+<li>查看用户邮箱  git config user.name         </li>
+<li>查看用户名   git config user.email <br>2）更改账户<br>$  git config –global –replace-all user.email “输入你的邮箱” <br>$  git config –global –replace-all user.name “输入你的用户名”       </li>
+</ul>
+</li>
+<li>链接域名时CNAME ，写成CNME</li>
+<li>新电脑重新启用自己原来的博客时，注意先生成ssh key 绑定原来的git key 然后就可以按新建的一样正常操作。</li>
+<li>下载更改Next主题时，始终不行，其实是因为网上的clone 地址不对，下载的版本有问题，而不是其他问题</li>
+</ol>
+<p>总结：识别问题是一种能力，这里面有几个关键点：看看参考文件的观点是否过时是否有误，多看官方文档，通过测试判断问题出现的环节点，还有保持好的心态没思路就重启再来。</p>
+<h2 id="行动步骤"><a href="#行动步骤" class="headerlink" title="行动步骤"></a>行动步骤</h2><p> 行动步骤看了各种版本Jeyzhang写的最简洁，以下为主要内容。</p>
+<p>Hexo是一个快速、简洁且高效的博客框架，而Github是一个免费的代码托管工具，利用Github Page可以免费创建一个静态网站。下面将介绍如何使用Hexo和Github，在win10环境下搭建一个静态的博客。</p>
+<p>全文分为三个部分：</p>
+<ol>
+<li>安装和配置Hexo及Github</li>
+<li>选择Hexo主题及发表文章</li>
+<li>注册及绑定自己的域名地址</li>
+</ol>
+<hr>
+<h4 id="安装和配置Hexo及Github"><a href="#安装和配置Hexo及Github" class="headerlink" title="安装和配置Hexo及Github"></a>安装和配置Hexo及Github</h4><h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><p>安装Hexo前，需要安装以下：<br>Node.js<br>Git<br>如果已经安装完成以上程序，打开Git-bash或者cmd，输入</p>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+<p>即可完成Hexo的安装。</p>
+<h5 id="使用Hexo进行本地建站"><a href="#使用Hexo进行本地建站" class="headerlink" title="使用Hexo进行本地建站"></a>使用Hexo进行本地建站</h5><p>选择一个本地的文件夹，如 <strong>D:\hexo</strong>。<br>输入</p>
+<pre><code>hexo init D:\hexo
+cd D:\hexo
+npm install
+</code></pre>
+<p>如果hexo安装成功，则在D:\hexo文件夹下的文件目录为</p>
+<pre><code>.
+├── _config.yml // 网站的配置信息，你可以在此配置大部分的参数。
+├── package.json
+├── scaffolds // 模板文件夹。当你新建文章时，Hexo会根据scaffold来建立文件。
+├── source // 存放用户资源的地方|   ├── _drafts|   └── _posts
+└── themes // 存放网站的主题。Hexo会根据主题来生成静态页面。
+</code></pre>
+<p> 详细文件或文件夹的具体含义见Hexo官方文档之建站,为了测试本地建站是否成功，输入</p>
+<pre><code>hexo s
+</code></pre>
+<p>如果显示如下</p>
+<pre><code>xxxxx http://0.0.0.0:4000/. Press Ctrl+C to stop
+</code></pre>
+<p>则说明本地建站成功，访问本地地址可以看到Hexo默认主题的效果。<br>至此，Hexo的安装和本地建站完成，如需更加深入全面地了解Hexo，可访问Hexo官方文档。</p>
+<h5 id="创建Github账号"><a href="#创建Github账号" class="headerlink" title="创建Github账号"></a>创建Github账号</h5><p>如果已经注册Github，可跳过此步骤。否则，访问Github官网进行注册，下面假设你注册Github账号名为MyGithub。</p>
+<h5 id="创建与账号同名的Repository"><a href="#创建与账号同名的Repository" class="headerlink" title="创建与账号同名的Repository"></a>创建与账号同名的Repository</h5><p>注册并登陆Github官网成功后，点击页面右上角的+，<br>选择New repository。<br>在Repository name中填写你的Github账号名.github.io,这里是MyGithub.github.io。<br>Description中填写对此repository的描述信息(可选，但建议填写，如Personal website)。<br>点击Create repository，完成创建。</p>
+<h5 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h5><p><strong>(1) 生成SSH</strong><br>检查是否已经有SSH Key，打开Git Bash，输入</p>
+<pre><code>cd ~/.ssh
+</code></pre>
+<p>如果没有这个目录，则生成一个新的SSH，输入</p>
+<pre><code>ssh-keygen -t rsa -C &quot;your e-mail&quot;
+</code></pre>
+<p>  其中，your e-mail是你注册Github时用到的邮箱。<br>  然后接下来几步都直接按回车键，最后生成如下<img src="https://img.maocdn.cn/img/2021/04/25/RSCTurW.jpg" alt="A"><br><strong>(2) 复制公钥内容到Github账户信息中</strong><br>打开<u>~/.ssh/id_rsa.pub</u>文件，复制里面的内容；<br>打开Github官网，登陆后进入到个人设置(点击头像-&gt;setting)，点击右侧的SSH Keys，点击Add SSH key；填写title之后，将之前复制的内容粘贴到Key框中，最后点击Add key即可。<br><strong>(3) 测试SSH是否配置成功</strong><br>输入</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>如果显示以下，则说明ssh配置成功。</p>
+<pre><code>Hi username! You&#39;ve successfully authenticated, but GitHub does notprovide shell access.
+</code></pre>
+<p><strong>将网站发布到Github的同名repository中</strong><br>打开D:\Hexo文件夹中的_config.yml文件，找到如下位置，填写</p>
+<pre><code># Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+    type: git
+    repo: git@github.com:MyGithub/MyGithub.github.io
+</code></pre>
+<p>注： (1) 其中MyGithub替换成你的Github账户; (2) 注意在yml文件中，:后面都是要带空格的。此时，通过访问<u><a href="http://mygithub.github.io/">http://MyGithub.github.io</a></u>可以看到默认的Hexo首页面（与之前本地测试时一样）。</p>
+<h4 id="选择Hexo主题及发表文章"><a href="#选择Hexo主题及发表文章" class="headerlink" title="选择Hexo主题及发表文章"></a>选择Hexo主题及发表文章</h4><p><strong>简洁的Next主题</strong><br>本网站使用的是Next主题。该主题简洁易用，在移动端也表现不错。<br>(1) <strong>下载<a href="https://github.com/iissnan/hexo-theme-next">Next</a>主题</strong></p>
+<pre><code>cd D:\Hexo
+git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
+<p><strong>(2) 修改网站的主题为Next</strong><br>打开D:\Hexo下的_config.yml文件，找到theme字段，将其修改为next</p>
+<pre><code># Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: next
+</code></pre>
+<p>(3) 本地验证是否可用输入</p>
+<pre><code>hexo s --debug
+</code></pre>
+<p>访问本地网站，确认网站主题是否切换为Next.<br>(4) 更新Github输入</p>
+<pre><code>hexo g -d
+</code></pre>
+<p>完成Github上网页文件的更新。<br><strong>发表新文章</strong><br>发表文章操作非常简单，在网站存放的根目录打开git bash，输入</p>
+<pre><code>hexo n &quot;name of the new post&quot;
+</code></pre>
+<p>回车后，在source文件夹下的_post文件夹下，可以看到新建了一个name of the new post.md的文件，打开</p>
+<pre><code>title: name of the new post
+date: 2015-12-09 22:55:25
+tags:
+</code></pre>
+<p>—可以给文章贴上相应的tags，如有多个则按照如下格式</p>
+<pre><code>[tag1, tag2, tag3, ...]
+</code></pre>
+<p>在- - -下方添加正文内容即可，注意需要使用markdown语法进行书写。<br>在这里有关于Markdown语法的简单说明。推荐使用MarkdownPad2进行md文件的编辑工作。<br>文章撰写完成后保存，输入</p>
+<pre><code>hexo g -d
+</code></pre>
+<p>即可生成新网站，并且同步Github上的网站内容。</p>
+<h4 id="注册及绑定自己的域名"><a href="#注册及绑定自己的域名" class="headerlink" title="注册及绑定自己的域名"></a>注册及绑定自己的域名</h4><p>地址截止到目前为止，你应该可以通过访问<a href="http://MyGithub.github.io来看到以上创建的网站了。但是，如何拥有一个属于自己的域名地址，并将其指向在Github上所创建的网站呢？**注册域名">http://MyGithub.github.io来看到以上创建的网站了。但是，如何拥有一个属于自己的域名地址，并将其指向在Github上所创建的网站呢？**注册域名</a>**<br>推荐选择国内的万网或者国外的Goddady进行域名的注册。<br><strong>DNS域名解析设置</strong><br>如果你选择的是万网注册的域名，可以使用其自带的域名解析服务。进入万网，登陆后进入到个人中心(点击用户名即可)，点击左侧的”云解析”，点击之前所购买的域名，在”解析设置”中，添加如下解析规则:<br><img src="https://img.maocdn.cn/img/2021/04/25/AqhPQst.png" alt="B"><br>其中，当记录类型为A时，记录值为服务器的ip地址，这里的服务器地址为存放Github page的地址，你可以通过命令行输入</p>
+<pre><code>ping github.io
+</code></pre>
+<p>得到。<br>DNS域名解析设置需要一定时间，之后你可以通过ping自己的域名地址来查看是否解析成功。<br><strong>在Github对应的repository中添加CNAME文件</strong><br>即在 MyGithub/MyGithub.github.io 中加入名为”CNAME”的文件，文件内容为你的域名地址，如</p>
+<pre><code>www.××××××.com
+</code></pre>
+<p>保存即可。CNAME文件设置的目的是，通过访问 MyGithub.github.io 可以跳转到你所注册的域名上。<br>为了方便本地文件deploy的时候，CNAME文件不发生丢失，可以在本地网站根目录下的source文件夹下，添加以上的CNAME文件。以后每次deploy的时候，CNAME文件不会发生丢失。<br>通过以上的设置，相信你已经可以通过注册域名来访问一个默认的hexo主题页面了。</p>
+<h2 id="Hexo项目系列"><a href="#Hexo项目系列" class="headerlink" title="Hexo项目系列"></a>Hexo项目系列</h2><ol>
+<li>HEXO搭建0-1</li>
+<li>HEXO个性化设置</li>
+<li>HEXO博客撰写技巧</li>
+<li>HEXO博客代理优化创建咨询服务</li>
+</ol>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/04/25/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo个性化设置</title>
+    <url>/2021/04/26/Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>极简的基础上做个性化，取悦自己同时满足功能需求。</p>
 <blockquote>
 <p>本文价值：实践记录主题网上提供的部分优化思路</p>
 </blockquote>
 <span id="more"></span>
 
-<h2 id="参考清单："><a href="#参考清单：" class="headerlink" title="参考清单："></a>参考清单：</h2><p>知乎作者路人SSS[Hexo+Next主题优化]<a href="https://zhuanlan.zhihu.com/p/30836436%EF%BC%89">https://zhuanlan.zhihu.com/p/30836436）</a><br>jeyzhang <a href="http://www.jeyzhang.com/next-theme-personal-settings.html">NexT主题个性化设置</a><br>阿丹博客[hexo的next主题美化]<a href="http://www.adanblog.com/hexo/fbf5310d.html">http://www.adanblog.com/hexo/fbf5310d.html</a><br>简书violinlin<a href="https://www.jianshu.com/p/78c218f9d1e7">Hexo-设置阅读全文</a><br>Luweir23 新版本NexT 调动态背景、调canvas_nest的解决<a href="https://blog.csdn.net/wyll19980812/article/details/107010542">方案</a><br>VinceZzz<a href="https://zhuanlan.zhihu.com/p/257707609">添加评论</a></p>
+<h2 id="参考清单："><a href="#参考清单：" class="headerlink" title="参考清单："></a>参考清单：</h2><p>路人SSS<a href="https://zhuanlan.zhihu.com/p/30836436">Hexo+Next主题优化</a><br>jeyzhang <a href="http://www.jeyzhang.com/next-theme-personal-settings.html">NexT主题个性化设置</a><br>阿丹博客<a href="http://www.adanblog.com/hexo/fbf5310d.html">hexo的next主题美化</a><br>violinlin<a href="https://www.jianshu.com/p/78c218f9d1e7">Hexo-设置阅读全文</a><br>Luweir23 新版本NexT 调动态背景、调canvas_nest的解决<a href="https://blog.csdn.net/wyll19980812/article/details/107010542">方案</a><br>VinceZzz<a href="https://zhuanlan.zhihu.com/p/257707609">Next添加评论</a></p>
 <h2 id="遇见的问题"><a href="#遇见的问题" class="headerlink" title="遇见的问题"></a>遇见的问题</h2><ol>
 <li>hexo new page 不能写成 pages 不然就不是创建页面了是生成post文件了</li>
 <li>Hexo由于更新，很多文件内容与网上的教程不一样,比如nest动画效果都调不出来</li>
@@ -191,154 +339,5 @@ copyright: false
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hexo搭建0-1</title>
-    <url>/2021/04/25/Hexo%E6%90%AD%E5%BB%BA0-1/</url>
-    <content><![CDATA[<p>搭建个人博客的主流其实是Wordpress,但是它对于一个连gitbash都不懂的小白来说，上手确实更复杂点。<br>同时如果我们的诉求是有一个看上去不错的免费空间，为自己提供一个个性化输出平台，专注于记录。<br>那基于Node开发的Hexo框架，配上Next的极简主题，就是一个很好的选择。</p>
-<blockquote>
-<p>文章要解决的问题：理清部署Hexo博客的步骤和障碍</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="准备清单"><a href="#准备清单" class="headerlink" title="准备清单"></a>准备清单</h2><p><strong>准备清单：</strong><br>Github账号<a href="https://github.com/">注册</a><br><strong>下载清单</strong><br><a href="https://git-scm.com/download/win">Git</a><br><a href="https://nodejs.org/en/">Nodjs</a></p>
-<p><strong>参考文件：</strong><br>hexo.io<a href="https://hexo.io/zh-cn/docs/commands.html">指令</a><br><a href="https://hexo.io/zh-cn/docs/setup.html">Hexo官方文档之建站</a><br>Git帮助文档creating a new <a href="https://help.github.com/articles/creating-a-new-repository/">repository</a><br>Jeyzhang<a href="http://www.jeyzhang.com/hexo-github-blog-building.html">博客</a></p>
-<h2 id="遇见的问题"><a href="#遇见的问题" class="headerlink" title="遇见的问题"></a>遇见的问题</h2><ol>
-<li>发布后出现Readme html<br> 注意观察自己github 默认branch 是否是master。</li>
-<li>Git在本地设置需要切换账户，不然会发布没有权限。<br>1）查看现在的账号名<ul>
-<li>查看用户邮箱  git config user.name         </li>
-<li>查看用户名   git config user.email <br>2）更改账户<br>$  git config –global –replace-all user.email “输入你的邮箱” <br>$  git config –global –replace-all user.name “输入你的用户名”       </li>
-</ul>
-</li>
-<li>链接域名时CNAME ，写成CNME</li>
-<li>新电脑重新启用自己原来的博客时，注意先生成ssh key 绑定原来的git key 然后就可以按新建的一样正常操作。</li>
-<li>下载更改Next主题时，始终不行，其实是因为网上的clone 地址不对，下载的版本有问题，而不是其他问题</li>
-</ol>
-<p>总结：识别问题是一种能力，这里面有几个关键点：看看参考文件的观点是否过时是否有误，多看官方文档，通过测试判断问题出现的环节点，还有保持好的心态没思路就重启再来。</p>
-<h2 id="行动步骤"><a href="#行动步骤" class="headerlink" title="行动步骤"></a>行动步骤</h2><p> 行动步骤看了各种版本Jeyzhang写的最简洁，以下为主要内容。</p>
-<p>Hexo是一个快速、简洁且高效的博客框架，而Github是一个免费的代码托管工具，利用Github Page可以免费创建一个静态网站。下面将介绍如何使用Hexo和Github，在win10环境下搭建一个静态的博客。</p>
-<p>全文分为三个部分：</p>
-<ol>
-<li>安装和配置Hexo及Github</li>
-<li>选择Hexo主题及发表文章</li>
-<li>注册及绑定自己的域名地址</li>
-</ol>
-<hr>
-<h4 id="安装和配置Hexo及Github"><a href="#安装和配置Hexo及Github" class="headerlink" title="安装和配置Hexo及Github"></a>安装和配置Hexo及Github</h4><h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><p>安装Hexo前，需要安装以下：<br>Node.js<br>Git<br>如果已经安装完成以上程序，打开Git-bash或者cmd，输入</p>
-<pre><code>npm install -g hexo-cli
-</code></pre>
-<p>即可完成Hexo的安装。</p>
-<h5 id="使用Hexo进行本地建站"><a href="#使用Hexo进行本地建站" class="headerlink" title="使用Hexo进行本地建站"></a>使用Hexo进行本地建站</h5><p>选择一个本地的文件夹，如 <strong>D:\hexo</strong>。<br>输入</p>
-<pre><code>hexo init D:\hexo
-cd D:\hexo
-npm install
-</code></pre>
-<p>如果hexo安装成功，则在D:\hexo文件夹下的文件目录为</p>
-<pre><code>.
-├── _config.yml // 网站的配置信息，你可以在此配置大部分的参数。
-├── package.json
-├── scaffolds // 模板文件夹。当你新建文章时，Hexo会根据scaffold来建立文件。
-├── source // 存放用户资源的地方|   ├── _drafts|   └── _posts
-└── themes // 存放网站的主题。Hexo会根据主题来生成静态页面。
-</code></pre>
-<p> 详细文件或文件夹的具体含义见Hexo官方文档之建站,为了测试本地建站是否成功，输入</p>
-<pre><code>hexo s
-</code></pre>
-<p>如果显示如下</p>
-<pre><code>xxxxx http://0.0.0.0:4000/. Press Ctrl+C to stop
-</code></pre>
-<p>则说明本地建站成功，访问本地地址可以看到Hexo默认主题的效果。<br>至此，Hexo的安装和本地建站完成，如需更加深入全面地了解Hexo，可访问Hexo官方文档。</p>
-<h5 id="创建Github账号"><a href="#创建Github账号" class="headerlink" title="创建Github账号"></a>创建Github账号</h5><p>如果已经注册Github，可跳过此步骤。否则，访问Github官网进行注册，下面假设你注册Github账号名为MyGithub。</p>
-<h5 id="创建与账号同名的Repository"><a href="#创建与账号同名的Repository" class="headerlink" title="创建与账号同名的Repository"></a>创建与账号同名的Repository</h5><p>注册并登陆Github官网成功后，点击页面右上角的+，<br>选择New repository。<br>在Repository name中填写你的Github账号名.github.io,这里是MyGithub.github.io。<br>Description中填写对此repository的描述信息(可选，但建议填写，如Personal website)。<br>点击Create repository，完成创建。</p>
-<h5 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h5><p><strong>(1) 生成SSH</strong><br>检查是否已经有SSH Key，打开Git Bash，输入</p>
-<pre><code>cd ~/.ssh
-</code></pre>
-<p>如果没有这个目录，则生成一个新的SSH，输入</p>
-<pre><code>ssh-keygen -t rsa -C &quot;your e-mail&quot;
-</code></pre>
-<p>  其中，your e-mail是你注册Github时用到的邮箱。<br>  然后接下来几步都直接按回车键，最后生成如下<img src="https://img.maocdn.cn/img/2021/04/25/RSCTurW.jpg" alt="A"><br><strong>(2) 复制公钥内容到Github账户信息中</strong><br>打开<u>~/.ssh/id_rsa.pub</u>文件，复制里面的内容；<br>打开Github官网，登陆后进入到个人设置(点击头像-&gt;setting)，点击右侧的SSH Keys，点击Add SSH key；填写title之后，将之前复制的内容粘贴到Key框中，最后点击Add key即可。<br><strong>(3) 测试SSH是否配置成功</strong><br>输入</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>如果显示以下，则说明ssh配置成功。</p>
-<pre><code>Hi username! You&#39;ve successfully authenticated, but GitHub does notprovide shell access.
-</code></pre>
-<p><strong>将网站发布到Github的同名repository中</strong><br>打开D:\Hexo文件夹中的_config.yml文件，找到如下位置，填写</p>
-<pre><code># Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-    type: git
-    repo: git@github.com:MyGithub/MyGithub.github.io
-</code></pre>
-<p>注： (1) 其中MyGithub替换成你的Github账户; (2) 注意在yml文件中，:后面都是要带空格的。此时，通过访问<u><a href="http://mygithub.github.io/">http://MyGithub.github.io</a></u>可以看到默认的Hexo首页面（与之前本地测试时一样）。</p>
-<h4 id="选择Hexo主题及发表文章"><a href="#选择Hexo主题及发表文章" class="headerlink" title="选择Hexo主题及发表文章"></a>选择Hexo主题及发表文章</h4><p><strong>简洁的Next主题</strong><br>本网站使用的是Next主题。该主题简洁易用，在移动端也表现不错。<br>(1) <strong>下载<a href="https://github.com/iissnan/hexo-theme-next">Next</a>主题</strong></p>
-<pre><code>cd D:\Hexo
-git clone https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre>
-<p><strong>(2) 修改网站的主题为Next</strong><br>打开D:\Hexo下的_config.yml文件，找到theme字段，将其修改为next</p>
-<pre><code># Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: next
-</code></pre>
-<p>(3) 本地验证是否可用输入</p>
-<pre><code>hexo s --debug
-</code></pre>
-<p>访问本地网站，确认网站主题是否切换为Next.<br>(4) 更新Github输入</p>
-<pre><code>hexo g -d
-</code></pre>
-<p>完成Github上网页文件的更新。<br><strong>发表新文章</strong><br>发表文章操作非常简单，在网站存放的根目录打开git bash，输入</p>
-<pre><code>hexo n &quot;name of the new post&quot;
-</code></pre>
-<p>回车后，在source文件夹下的_post文件夹下，可以看到新建了一个name of the new post.md的文件，打开</p>
-<pre><code>title: name of the new post
-date: 2015-12-09 22:55:25
-tags:
-</code></pre>
-<p>—可以给文章贴上相应的tags，如有多个则按照如下格式</p>
-<pre><code>[tag1, tag2, tag3, ...]
-</code></pre>
-<p>在- - -下方添加正文内容即可，注意需要使用markdown语法进行书写。<br>在这里有关于Markdown语法的简单说明。推荐使用MarkdownPad2进行md文件的编辑工作。<br>文章撰写完成后保存，输入</p>
-<pre><code>hexo g -d
-</code></pre>
-<p>即可生成新网站，并且同步Github上的网站内容。</p>
-<h4 id="注册及绑定自己的域名"><a href="#注册及绑定自己的域名" class="headerlink" title="注册及绑定自己的域名"></a>注册及绑定自己的域名</h4><p>地址截止到目前为止，你应该可以通过访问<a href="http://MyGithub.github.io来看到以上创建的网站了。但是，如何拥有一个属于自己的域名地址，并将其指向在Github上所创建的网站呢？**注册域名">http://MyGithub.github.io来看到以上创建的网站了。但是，如何拥有一个属于自己的域名地址，并将其指向在Github上所创建的网站呢？**注册域名</a>**<br>推荐选择国内的万网或者国外的Goddady进行域名的注册。<br><strong>DNS域名解析设置</strong><br>如果你选择的是万网注册的域名，可以使用其自带的域名解析服务。进入万网，登陆后进入到个人中心(点击用户名即可)，点击左侧的”云解析”，点击之前所购买的域名，在”解析设置”中，添加如下解析规则:<br><img src="https://img.maocdn.cn/img/2021/04/25/AqhPQst.png" alt="B"><br>其中，当记录类型为A时，记录值为服务器的ip地址，这里的服务器地址为存放Github page的地址，你可以通过命令行输入</p>
-<pre><code>ping github.io
-</code></pre>
-<p>得到。<br>DNS域名解析设置需要一定时间，之后你可以通过ping自己的域名地址来查看是否解析成功。<br><strong>在Github对应的repository中添加CNAME文件</strong><br>即在 MyGithub/MyGithub.github.io 中加入名为”CNAME”的文件，文件内容为你的域名地址，如</p>
-<pre><code>www.××××××.com
-</code></pre>
-<p>保存即可。CNAME文件设置的目的是，通过访问 MyGithub.github.io 可以跳转到你所注册的域名上。<br>为了方便本地文件deploy的时候，CNAME文件不发生丢失，可以在本地网站根目录下的source文件夹下，添加以上的CNAME文件。以后每次deploy的时候，CNAME文件不会发生丢失。</p>
-<p>通过以上的设置，相信你已经可以通过注册域名来访问一个默认的hexo主题页面了。<br>之后的工作就在于，(1)如何对主题进行个性化设置及；(2)发表博文以充实网站内容。<br>这里有关于next主题的个性化设置说明。</p>
-<h2 id="Hexo项目系列"><a href="#Hexo项目系列" class="headerlink" title="Hexo项目系列"></a>Hexo项目系列</h2><ol>
-<li>HEXO搭建0-1</li>
-<li>HEXO个性化设置</li>
-<li>HEXO博客撰写技巧</li>
-<li>HEXO博客代理优化创建咨询服务</li>
-</ol>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/04/25/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
