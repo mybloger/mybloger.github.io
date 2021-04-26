@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -72,6 +72,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="HexoLover" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -81,7 +82,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تشغيل شريط التصفح">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -100,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -111,19 +113,61 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-schedule">
+        <li class="menu-item menu-item-categories">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>التقويم</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -146,10 +190,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/26/HEXO%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="chen">
       <meta itemprop="description" content="">
     </span>
@@ -160,7 +204,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/25/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">Hexo搭建0-1</a>
+            <a href="/2021/04/26/HEXO%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/" class="post-title-link" itemprop="url">HEXO个性化设置</a>
         </h2>
 
         <div class="post-meta">
@@ -168,16 +212,98 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">نُشر في</span>
+              <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="أُنشأ: 2021-04-25 22:48:53 / عُدل: 23:25:33" itemprop="dateCreated datePublished" datetime="2021-04-25T22:48:53+08:00">2021-04-25</time>
+              <time title="创建时间：2021-04-26 12:58:46 / 修改时间：16:27:53" itemprop="dateCreated datePublished" datetime="2021-04-26T12:58:46+08:00">2021-04-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
-              <span class="post-meta-item-text">في</span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/project/" itemprop="url" rel="index"><span itemprop="name">project</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>极简的基础上做个性化，变成喜欢的样子同时满足自己的需求。</p>
+<blockquote>
+<p>本文价值：实践主题优化思路</p>
+</blockquote>
+<h3 id="参考清单："><a href="#参考清单：" class="headerlink" title="参考清单："></a>参考清单：</h3><p>知乎作者路人SSS[Hexo+Next主题优化]<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30836436%EF%BC%89">https://zhuanlan.zhihu.com/p/30836436）</a><br>jeyzhang <a target="_blank" rel="noopener" href="http://www.jeyzhang.com/next-theme-personal-settings.html">NexT主题个性化设置</a><br>阿丹博客[hexo的next主题美化]<a target="_blank" rel="noopener" href="http://www.adanblog.com/hexo/fbf5310d.html">http://www.adanblog.com/hexo/fbf5310d.html</a></p>
+<h3 id="遇见的问题"><a href="#遇见的问题" class="headerlink" title="遇见的问题"></a>遇见的问题</h3><p><strong>提前说明</strong></p>
+<p>假设网站的根目录为D:/Hexo/，也称为站点目录</p>
+<p>站点配置文件 是指网站目录下的_config.yml文件，即D:/Hexo/_config.yml</p>
+<p>主题配置文件 是指网站目录下对应的主题文件夹下的_config.yml文件，即D:/Hexo/themes/next/_config.yml.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/Hexo%E6%90%AD%E5%BB%BA0-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HexoLover">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/25/Hexo%E6%90%AD%E5%BB%BA0-1/" class="post-title-link" itemprop="url">Hexo搭建0-1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-25 22:48:53" itemprop="dateCreated datePublished" datetime="2021-04-25T22:48:53+08:00">2021-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-26 12:58:15" itemprop="dateModified" datetime="2021-04-26T12:58:15+08:00">2021-04-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/project/" itemprop="url" rel="index"><span itemprop="name">project</span></a>
                 </span>
@@ -306,7 +432,7 @@ tags:
 <p>通过以上的设置，相信你已经可以通过注册域名来访问一个默认的hexo主题页面了。<br>之后的工作就在于，(1)如何对主题进行个性化设置及；(2)发表博文以充实网站内容。<br>这里有关于next主题的个性化设置说明。</p>
 <h2 id="Hexo项目系列"><a href="#Hexo项目系列" class="headerlink" title="Hexo项目系列"></a>Hexo项目系列</h2><ol>
 <li>HEXO搭建0-1</li>
-<li>HEXO个性化</li>
+<li>HEXO个性化设置</li>
 <li>HEXO博客撰写技巧</li>
 <li>HEXO博客代理优化创建咨询服务</li>
 </ol>
@@ -332,7 +458,7 @@ tags:
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="chen">
       <meta itemprop="description" content="">
     </span>
@@ -351,9 +477,9 @@ tags:
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">نُشر في</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="أُنشأ: 2021-04-25 15:08:29" itemprop="dateCreated datePublished" datetime="2021-04-25T15:08:29+08:00">2021-04-25</time>
+              <time title="创建时间：2021-04-25 15:08:29" itemprop="dateCreated datePublished" datetime="2021-04-25T15:08:29+08:00">2021-04-25</time>
             </span>
 
           
@@ -439,10 +565,10 @@ tags:
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          المحتويات
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          عام
+          站点概览
         </li>
       </ul>
 
@@ -453,24 +579,29 @@ tags:
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="chen"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">chen</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">المقالات</span>
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">التصنيفات</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">الوسوم</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -502,7 +633,7 @@ tags:
   </span>
   <span class="author" itemprop="copyrightHolder">chen</span>
 </div>
-  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
@@ -539,6 +670,10 @@ tags:
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
