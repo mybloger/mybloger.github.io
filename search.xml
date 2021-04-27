@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo搭建0-1</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//Hexo%E6%90%AD%E5%BB%BA0-1/</url>
     <content><![CDATA[<p>搭建个人博客的主流其实是Wordpress,但是它对于一个连gitbash都不懂的小白来说，上手确实更复杂点。<br>同时如果我们的诉求是有一个看上去不错的免费空间，为自己提供一个个性化输出平台，专注于记录。<br>那基于Node开发的Hexo框架，配上Next的极简主题，就是一个很好的选择。</p>
 <blockquote>
 <p>本文价值：理清部署Hexo博客的步骤和障碍</p>
@@ -132,7 +132,7 @@ tags:
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -150,7 +150,7 @@ tags:
   </entry>
   <entry>
     <title>Hexo个性化设置</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//Hexo%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>极简的基础上做个性化，取悦自己同时满足功能需求。</p>
 <blockquote>
 <p>本文价值：实践记录主题网上提供的部分优化思路</p>
@@ -342,7 +342,7 @@ copyright: false
   </entry>
   <entry>
     <title>Hexo博客撰写技巧</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//Hexo%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>我们学习写博客前要找到编辑的正确姿势，然后体会写的快乐并忘记其它对于我们比较复杂的东西，比如复杂的编程语法，不会上传等等。这里会整理上传的基本流程，介绍编辑器选择，Markdown语法从常用到进阶的用法。</p>
 <blockquote>
 <p>本文价值：扫清Hexo博客发布的编写发布障碍</p>
@@ -564,12 +564,12 @@ src="http://oht4nlntk.bkt.clouddn.com/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB
   </entry>
   <entry>
     <title>战略</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//%E6%88%98%E7%95%A5/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hexo博客代优化创建服务</title>
-    <url>/p/undefined.html</url>
+    <url>/2021//Hexo%E5%8D%9A%E5%AE%A2%E4%BB%A3%E4%BC%98%E5%8C%96%E5%88%9B%E5%BB%BA%E6%9C%8D%E5%8A%A1/</url>
     <content><![CDATA[<p>应该有很多和我一样是没有程序基础的，但是想拥有一个自己的免费博客。<br>正常你参考前面的系列文章就可以搭建出一个自己喜欢的基础Hexo框架博客了，但是可能需要比较多的时间去琢磨。对于那些有程序经验的从业者可能30分钟就弄出来了，普通人可能要花一天时间去研究。如果你觉得想要节省自己的时间，专注于博客内容本身，那你可以联系我进行很少的付费创建一个。<br>当然，也是希望更多的非专业人员也拥有自己的博客。</p>
 <blockquote>
 <p>本文价值：为非专业人员提供创建博客服务</p>
