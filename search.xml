@@ -207,7 +207,7 @@ copyright: false
 </ol>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>Project</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -254,7 +254,7 @@ copyright: false
 </ol>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>Project</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -477,10 +477,11 @@ src="http://oht4nlntk.bkt.clouddn.com/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB
 </ol>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>Project</category>
       </categories>
       <tags>
-        <tag>hexo, Markdown</tag>
+        <tag>hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -608,7 +609,7 @@ tags:
 </ol>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>Project</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
@@ -649,14 +650,14 @@ tags:
 <p>待完善</p>
 <h2 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h2><h3 id="战略推演"><a href="#战略推演" class="headerlink" title="战略推演"></a>战略推演</h3><h4 id="核心观点"><a href="#核心观点" class="headerlink" title="核心观点"></a>核心观点</h4><h4 id="重要摘要"><a href="#重要摘要" class="headerlink" title="重要摘要"></a>重要摘要</h4><h4 id="详细笔记"><a href="#详细笔记" class="headerlink" title="详细笔记"></a>详细笔记</h4><h4 id="核心主张"><a href="#核心主张" class="headerlink" title="核心主张"></a>核心主张</h4><h3 id="白鲸战略"><a href="#白鲸战略" class="headerlink" title="白鲸战略"></a>白鲸战略</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h2 id="应用改变"><a href="#应用改变" class="headerlink" title="应用改变"></a>应用改变</h2><h2 id="战略系列"><a href="#战略系列" class="headerlink" title="战略系列"></a>战略系列</h2>]]></content>
       <categories>
-        <category>read</category>
+        <category>Read</category>
       </categories>
       <tags>
         <tag>战略</tag>
       </tags>
   </entry>
   <entry>
-    <title>【战略推演】</title>
+    <title>《战略推演》</title>
     <url>/p/84ae5edf.html</url>
     <content><![CDATA[<h4 id="读前问题"><a href="#读前问题" class="headerlink" title="读前问题"></a>读前问题</h4><p>读前问题：</p>
 <ol>
@@ -969,7 +970,7 @@ tags:
       </categories>
       <tags>
         <tag>战略</tag>
-        <tag>阅读</tag>
+        <tag>阅读笔记</tag>
       </tags>
   </entry>
 </search>
