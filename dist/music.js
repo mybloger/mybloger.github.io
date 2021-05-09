@@ -32,11 +32,10 @@ const ap = new APlayer({
         lrc: 'images/Ship In The Sand-Marble Sounds.lrc'
       },
       {
-        name: '奔赴星空',
-        artist: '尹昔眠',
-        url: 'http://www.kugou.com/song/#hash=63C88E5D7329DE9928F186E66DCAE59D',
-        cover: 'http://imge.kugou.com/stdmusic/150/20210402/20210402114314135880.jpg',
-        lrc: 'images/奔赴星空-尹昔眠.lrc'
+        name: 'Midnight',
+        artist: 'Dave Greening',
+        url: 'http://music.163.com/song/media/outer/url?id=1294706.mp3',
+        cover: 'http://p4.music.126.net/vnBKR01jn8rZlH5M4UHKRQ==/6665239487783748.jpg',
       },
       {
         name: '我喜欢上你时的内心活动',
