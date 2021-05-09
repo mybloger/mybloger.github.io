@@ -32,11 +32,11 @@ const ap = new APlayer({
         lrc: 'images/Ship In The Sand-Marble Sounds.lrc'
       },
       {
-        name: 'Need You Now',
-        artist: 'Lady A',
-        url: 'http://music.163.com/song/media/outer/url?id=4154790.mp3',
-        cover: 'http://p3.music.126.net/00igxkKXZzw6kM3rQ6J-4A==/18687299626930277.jpg',
-        lrc: 'images/Need You Now-Lady A.lrc'
+        name: '奔赴星空',
+        artist: '尹昔眠',
+        url: 'http://www.kugou.com/song/#hash=63C88E5D7329DE9928F186E66DCAE59D',
+        cover: 'http://imge.kugou.com/stdmusic/150/20210402/20210402114314135880.jpg',
+        lrc: 'images/奔赴星空-尹昔眠.lrc'
       },
       {
         name: '我喜欢上你时的内心活动',
@@ -66,7 +66,7 @@ const ap = new APlayer({
         cover: 'http://p3.music.126.net/-kDO5LiKki3bmeF21MaCuQ==/109951163917806959.jpg',
         lrc: 'images/坠落星空-小星星Aurora.lrc'
       },
-      {
+        {
         name: '吴哥窟',
         artist: '吴雨霏',
         url: 'http://music.163.com/song/media/outer/url?id=298258.mp3',

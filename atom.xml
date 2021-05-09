@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-07T07:16:49.286Z</updated>
+  <updated>2021-05-07T15:06:53.461Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>寄生虫SEO</title>
+    <link href="http://example.com/p/736930bc.html"/>
+    <id>http://example.com/p/736930bc.html</id>
+    <published>2021-05-07T14:57:21.000Z</published>
+    <updated>2021-05-07T15:06:53.461Z</updated>
+    
+    <content type="html"><![CDATA[<p>利用顶级网站的权重来获得竞争激烈的关键字排名，从而提升你自己网站的流量.</p><h2 id="理论框架ABC"><a href="#理论框架ABC" class="headerlink" title="理论框架ABC"></a>理论框架ABC</h2><p>阅读原文为 黑贸君微信推送<a href="https://mp.weixin.qq.com/s/5tzXVGp8FX4sS3hJVvAdVw">文章</a></p><p>A.选择高权重网站</p><p>选择高权重的的UGC网站或者平台，以下列表是公认高权重的网站</p><p>Quora</p><p>LinkedIn</p><p>YouTube</p><p>Google Site</p><p>Reddit</p><p>Medium</p><p>Facebook Page</p><p>Yelp</p><p>Google MyMaps</p><p>Pinterest</p><p>Doplash</p><p>Twitter</p><p>Tumblr</p><p>B.建立内容<br>在这些平台建立内容，博客类型的用相对高质量的博客内容，图片网站用关键词命名图片，视频网站也要做视频SEO。</p><p>C.跑外链<br>对你做的内容进行链接轰炸，主要用到的工具是GSA+Rankerx自动化外链工具进行跑外链。完全不用担心被谷歌处罚，你跑的外链对于平台来说九牛一毛。如果自己不懂怎么跑外链可以在黑贸论坛搜索相关关键词。如果还是不懂，可以直接在FIVVER买外链，便宜的基本都是机器跑的外链。</p><h2 id="实践测试"><a href="#实践测试" class="headerlink" title="实践测试"></a>实践测试</h2><p>账号注册<br>提问、文章发布、回答<br>跑外链（什么）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;利用顶级网站的权重来获得竞争激烈的关键字排名，从而提升你自己网站的流量.&lt;/p&gt;
+&lt;h2 id=&quot;理论框架ABC&quot;&gt;&lt;a href=&quot;#理论框架ABC&quot; class=&quot;headerlink&quot; title=&quot;理论框架ABC&quot;&gt;&lt;/a&gt;理论框架ABC&lt;/h2&gt;&lt;p&gt;阅读原文为 </summary>
+      
+    
+    
+    
+    <category term="Project" scheme="http://example.com/categories/Project/"/>
+    
+    
+    <category term="SEO" scheme="http://example.com/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Paypal低费率提现到个人账户或支付宝</title>
     <link href="http://example.com/p/42b1a631.html"/>
     <id>http://example.com/p/42b1a631.html</id>
     <published>2021-05-07T02:20:35.000Z</published>
-    <updated>2021-05-07T07:16:49.286Z</updated>
+    <updated>2021-05-07T07:17:15.797Z</updated>
     
     <content type="html"><![CDATA[<p>Paypal收到的款默认需要打到对公银行账户而且是要能收美元的账户。这就有点不方便了嘛，能直接到支付宝就最好了。</p><blockquote><p>本文价值：记录Paypal资金到Wordfirst再转入个人账号全过程操作记录</p></blockquote><span id="more"></span><h2 id="一句话概要："><a href="#一句话概要：" class="headerlink" title="一句话概要："></a>一句话概要：</h2><p>通过绑定Wordfirst港币账户到Paypal进行提现然后通过Wordfirst直接提现到个人银行账户。</p><h2 id="注意要点："><a href="#注意要点：" class="headerlink" title="注意要点："></a>注意要点：</h2><ol><li>美国账户,国内账户要35$ 固定费用，但香港账户免费。 详细查看Paypal<a href="https://www.paypal.com/c2/webapps/mpp/merchant-fees">费用</a>专栏详解。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image.png" alt="Imag.png"></li><li>Wordfirst转账费率比较底，无汇损，费率为千三，次日到账。</li><li>Wordfirs注册时公司名选择拼音还是英文要和paypal保持一致，避免产生不必要的麻烦。</li><li>Paypal首次绑定可能出现问题，需要开case沟通</li><li>Wordfirst提现时新平台可能需要关联账户并上传交易记录，但也还比较方便<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-1.png" alt="Image-1.png"></li></ol><h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><h3 id="申请Wordfirst账户"><a href="#申请Wordfirst账户" class="headerlink" title="申请Wordfirst账户"></a>申请Wordfirst账户</h3><p><a href="https://www.worldfirst.com.cn/cn/">官方网站</a><br>账户类型注意选择企业账户=》<br>填写法人信息=》上传资料 一步步正常操作即可。<br>在注册时记得可以填写邀请码（填了的小伙伴一定大卖，哈哈）：</p><blockquote><p>TS103-13676501507</p></blockquote><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-2.png" alt="Image-2.png"></p><p>这里的话基本信息完成后会收到来自Wordfirst的邮件，并协助通过邮件进行资料提交<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-3.png" alt="Image-3.png"><br>那么主要所需资料，回邮件告知。主要包括下面这些：<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-4.png" alt="Image-4.png"><br>官方处理效率还是比较高的，邮件当日会反馈，次日就可完成审核。</p><h3 id="申请港币账户绑定Paypal"><a href="#申请港币账户绑定Paypal" class="headerlink" title="申请港币账户绑定Paypal"></a>申请港币账户绑定Paypal</h3><h4 id="港币账号"><a href="#港币账号" class="headerlink" title="港币账号"></a>港币账号</h4><p>完成账户申请后，申请港币账户0费用提现<br>（我这里走了弯路，先申请的美元账户，然后发现提现费用要35$,有点高然后才找到这个方案）<br>后台直接创建选择HKD即可<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-5.png" alt="Image-5.png"><br><img src="https://img.maocdn.cn/img/2021/05/07/Image-6.png" alt="Image-6.png"><br>完成后会点击左侧导航栏账户信息查看一会儿Paypal绑定需要的银行信息。<br>长这样的。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-7.png" alt="Image-7.png"></p><h4 id="Paypal绑定账号"><a href="#Paypal绑定账号" class="headerlink" title="Paypal绑定账号"></a>Paypal绑定账号</h4><p>Paypal后台找到绑定银行的入口,有两种方式：<br>1.设置=》账户设置=》资金、银行账户和卡=》绑定<br>2.首页的提现=》提现方式（标准）=&gt;绑定</p><p>选择关联银行账户，默认的是大陆账户<br>我们要选择底部的：<br>关联美国或中国香港特别行政区的银行账户<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-8.png" alt="Image-8.png"><br><img src="https://img.maocdn.cn/img/2021/05/07/Image-9.png" alt="Image-9.png"></p><p>后面一样的，一步步填写信息即可。</p><p>完成后有两种结果：</p><blockquote><p>绑定成功，那恭喜，可以直接跳过后面看下一步。<br>   绑定失败，继续沟通解决。</p></blockquote><p>我收到的提示是“Sorry, we can’t link your bank account right now.”<br>思路是：先核对银行信息是否填写正确，再尝试绑定两次，确认问题出在Paypal后，我们要通过消息中心联系客服。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-10.png" alt="Image-10.png"><br>几番沟通，然后会打个电话过来（讲的英语是个印度口音的小伙子）确认问题，挂完电话过一会。<br>我换个浏览器再尝试一次，就可以了。<br>（反正是Paypal的技术问题）Paypal论坛也有同样类似的遭遇。</p><h3 id="Paypal提现到Wordfirst"><a href="#Paypal提现到Wordfirst" class="headerlink" title="Paypal提现到Wordfirst"></a>Paypal提现到Wordfirst</h3><p>完成上一步绑定工作，这里就直接安排提现步骤就可以<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-11.png" alt="Image-11.png"><br>用少量金额测试了一下后<br>次日，Wordfirst会收到提现的款项<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-12.png" alt="Image-12.png"></p><h3 id="提现"><a href="#提现" class="headerlink" title="提现"></a>提现</h3><p>提现到银行卡：<br>首页点击提现绑定法人的个人银行卡或企业账户就行啦。<br>提现到支付宝：（进入Worldfirst进入左侧导航栏。点击转账到支付宝）<br>目前专员说是支持amz和ebay的款项提到支付宝</p><p>到此我们顺利的话就已经完成提现了。</p><h3 id="新平台Wordfirst需要上传交易记录"><a href="#新平台Wordfirst需要上传交易记录" class="headerlink" title="新平台Wordfirst需要上传交易记录"></a>新平台Wordfirst需要上传交易记录</h3><p>进入Worldfirst进入左侧导航栏。点击转账到支付宝</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-13.png" alt="Image-13.png"></p><p>但是这里发现额度不够，</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-14.png" alt="Image-14.png"></p><p>按照提示需要在店铺管理中绑定店铺，方便后面上传交易记录<br>这里选择Paypal</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-15.png" alt="Image-15.png"></p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-16.png" alt="Image-16.png"></p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-17.png" alt="Image-17.png"></p><p>需要填写商家号完成绑定。<br>如何找Paypal商家号</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-18.png" alt="Image-18.png"></p><p>Paypal下载交易记录<br>其实在Paypal首页创建报告下载近一个月记录即可。</p><p>官方有指导<a href="https://marmot-worldfirst.oss-accelerate.aliyuncs.com/storage/2020/4/28/b5d673f7-17d6-43c0-8f9b-29b9988dac27.pdf">文档</a></p><p>最后将下载的CSV文件上传到Wordfirst<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-19.png" alt="Image-19.png"></p>]]></content>
     
@@ -47,12 +72,12 @@
     <link href="http://example.com/p/c142332b.html"/>
     <id>http://example.com/p/c142332b.html</id>
     <published>2021-05-06T02:49:27.000Z</published>
-    <updated>2021-05-06T04:57:49.936Z</updated>
+    <updated>2021-05-07T13:13:37.334Z</updated>
     
-    <content type="html"><![CDATA[<p>Shopify收款涉及到关联平台不计较多。<br>Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。</p><blockquote><p>本文价值：记录shopify涉及到的收款相关记录</p></blockquote><span id="more"></span><p>关于shopify通过Paypal获得收款后，如何提现的问题记录。</p><ul><li>选用第三方支付如Wordfirst创建企业账户 （注意账户名和papal一致，如果用的拼音或是英文保持一致）<ul><li>需要的资料有（身份证照片，手持身份证+日期照片，营业执照）提交了次日就能通过  </li></ul></li><li>创建香港账户，美国美元账户</li><li>在papal中绑定账户<ul><li>注意点是首次绑定可能会不成功：提示 “Sorry, we can’t link your bank account right now.”</li><li>Message联系papal客服，描述问题。他们会打电话过来（印度小伙用的英文）联系你确认问题，基本上挂了之后，换个浏览器再绑定，就可以了。</li></ul></li><li>操作提现到Wordfirst上面的账户<ul><li>关于费用：注意点是美国账户要35$ 固定费用，但<strong>香港账户免费</strong> 具体不同地方费率可以查看官方</li><li>所以优先选择香港账户，Papayl会兑换成港币送到香港账户，然后我们通过香港账户直接体现到法人支付宝即可。</li></ul></li></ul><p>2Checkout收到的款发到Paypal是没有再收手续费的，新账户收到的是4.4%+0.3usd</p><p>20210506</p>]]></content>
+    <content type="html"><![CDATA[<p>Shopify收款涉及到关联平台比较多。<br>Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。</p><blockquote><p>本文价值：记录shopify涉及到的收款相关记录</p></blockquote><span id="more"></span><p>关于shopify通过Paypal获得收款后，如何提现的问题记录。</p><ul><li>选用第三方支付如Wordfirst创建企业账户 （注意账户名和papal一致，如果用的拼音或是英文保持一致）<ul><li>需要的资料有（身份证照片，手持身份证+日期照片，营业执照）提交了次日就能通过  </li></ul></li><li>创建香港账户，美国美元账户</li><li>在papal中绑定账户<ul><li>注意点是首次绑定可能会不成功：提示 “Sorry, we can’t link your bank account right now.”</li><li>Message联系papal客服，描述问题。他们会打电话过来（印度小伙用的英文）联系你确认问题，基本上挂了之后，换个浏览器再绑定，就可以了。</li></ul></li><li>操作提现到Wordfirst上面的账户<ul><li>关于费用：注意点是美国账户要35$ 固定费用，但<strong>香港账户免费</strong> 具体不同地方费率可以查看官方</li><li>所以优先选择香港账户，Papayl会兑换成港币送到香港账户，然后我们通过香港账户直接体现到法人支付宝即可。</li></ul></li></ul><p>2Checkout收到的款发到Paypal是没有再收手续费的，新账户收到的是4.4%+0.3usd</p><p>20210506</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;Shopify收款涉及到关联平台不计较多。&lt;br&gt;Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;Shopify收款涉及到关联平台比较多。&lt;br&gt;Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本文价值：记录shopify涉及到的收款相关记录&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -77,11 +102,23 @@
     <link href="http://example.com/p/71c7f9c2.html"/>
     <id>http://example.com/p/71c7f9c2.html</id>
     <published>2021-05-01T23:59:15.000Z</published>
-    <updated>2021-05-01T23:59:15.662Z</updated>
+    <updated>2021-05-08T02:47:02.403Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Youth"><a href="#Youth" class="headerlink" title="Youth"></a>Youth</h3><audio id="audio" controls="" preload="none"><source id="mp3"src="https://mpdown.kekenet.com/Sound/Article/kekexdfmw30/01-Youth.mp3"></audio><p>Youth is not a time of life; it is a state of mind; it is not a matter of rosy cheeks, red lips and supple knees; it is a matter of the will, a quality of the imagination, a vigor of the emotions; it is the freshness of the deep springs of life.<br>Youth means a temperamental predominance of courage over timidity, of the appetite for adventure over the love of ease. This often exists in a man of 60 more than a boy of 20. Nobody grows old merely by a number of years. We grow old by deserting our ideals.<br>Years may wrinkle the skin, but to give up enthusiasm wrinkles the soul. Worry, fear, self-distrust bows the heart and turns the spirit back to dust.<br>Whether 60 or 16, there is in every human being’s heart the lure of wonders, the unfailing appetite for what’s next and the joy of the game of living. In the center of your heart and my heart, there is a wireless station; so long as it receives messages of beauty, hope, cheer, courage and power from man and from the infinite, so long as you are young.<br>When your aerials are down, and your spirit is covered with snows of cynicism and the ice of pessimism, then you’ve grown old, even at 20; but as long as your aerials are up, to catch waves of optimism, there’s hope you may die young at 80.</p><p>译文：</p><p>青春<br>青春不是年华，而是心境；青春不是桃面、丹唇、柔膝，而是深沉的意志，恢宏的想象，炙热的恋情；青春是生命的深泉在涌流。<br>青春气贯长虹，勇锐盖过怯弱，进取压倒苟安。如此锐气，二十后生而有之，六旬男子则更多见。年岁有加，并非垂老，理想丢弃，方堕暮年。<br>岁月悠悠，衰微只及肌肤；热忱抛却，颓废必致灵魂。忧烦，惶恐，丧失自信，定使心灵扭曲，意气如灰。<br>无论年届花甲，拟或二八芳龄，心中皆有生命之欢乐，奇迹之诱惑，孩童般天真久盛不衰。人人心中皆有一台天线，只要你从天上人间接受美好、希望、欢乐、勇气和力量的信号，你就青春永驻，风华常存。 、<br>一旦天线下降，锐气便被冰雪覆盖，玩世不恭、自暴自弃油然而生，即使年方二十，实已垂垂老矣；然则只要树起天线，捕捉乐观信号，你就有望在八十高龄告别尘寰时仍觉年轻。</p><p>wrinkle. 皱纹，方法，革新，瑕疵 vt. 使起皱纹，皱着 v<br>cynicismn. 愤世嫉俗，讥笑，冷言冷语 Cynicism:犬儒主<br>enthusiasmn. 热情，热心;热衷的事物<br>infiniteadj. 无限的，无穷的 n. 无限<br>pessimismn. 悲观，悲观主义<br>appetiten. 嗜好，食欲，欲望<br>adventuren. 冒险，奇遇 vt. 冒险，尝试 vi. 大胆进行，<br>optimismn. 乐观，乐观主义<br>temperamentaladj. 性情的，喜怒无常的<br>vigorn. 活力，精力</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Youth&quot;&gt;&lt;a href=&quot;#Youth&quot; class=&quot;headerlink&quot; title=&quot;Youth&quot;&gt;&lt;/a&gt;Youth&lt;/h3&gt;&lt;audio id=&quot;audio&quot; controls=&quot;&quot; preload=&quot;none&quot;&gt;
+&lt;source id=&quot;mp3</summary>
+      
     
     
     
+    <category term="Project" scheme="http://example.com/categories/Project/"/>
     
+    
+    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
@@ -90,9 +127,9 @@
     <link href="http://example.com/p/92a3e8ec.html"/>
     <id>http://example.com/p/92a3e8ec.html</id>
     <published>2021-05-01T13:20:37.000Z</published>
-    <updated>2021-05-01T23:47:30.726Z</updated>
+    <updated>2021-05-08T15:56:03.248Z</updated>
     
-    <content type="html"><![CDATA[<p>详细笔记</p><p><strong>伊甸园</strong><br>你是谁<br>唯有清晰地意识到有一天她终将死去，她才能够体会活在世上是多么美好</p><p>苏菲一直认为这个花园自成一个世界。每一次她听到圣经上有关伊甸园的事时，她就觉得自己好像坐在她的小天地，观察属于她的小小乐园一般。<br>世界从何而来？</p><p>通过苏菲代转卡片的席德是谁？</p><p>她生平第一次开始觉得无论在学校或其他地方，人们关心的都只是一些芝麻琐事罢了。世上还有更重要的事有待解答，这些事比学校所上的任何科目都更重要。</p><p>遗憾的是，当我们成长时，不仅习惯了有地心引力这回事，同时也很快地习惯了世上的一切。<br>这世界就像魔术师从他的帽子里拉出的一只白兔。</p><p>“你太习惯这个世界了，才会对任何事情都不感到惊奇。”</p><p>要有好奇心</p><p>劳力工作都由奴隶担任，因此市民有充分的闲暇，可以将所有时间都投注在政治与文化上,从神话的思考模式发展到以经验与理性为基础的思考模式</p><p>苏菲发现哲学这门课程更有趣了，因为她可运用自己的常识来理解这些哲学思想，而无须凭借她在学校学到的知识</p><p>大自然的积木必须是永恒的，因为没有一件事物会来自虚无</p><p>算命者试图预测某些事实上极不可测的事物</p><p>如果你信基督教或伊斯兰教，这就叫“信仰”，但如果你相信占星术或十三号星期五不吉利，就是迷信！</p>]]></content>
+    <content type="html"><![CDATA[<p>详细笔记</p><p><strong>伊甸园</strong><br>你是谁<br>唯有清晰地意识到有一天她终将死去，她才能够体会活在世上是多么美好</p><p>苏菲一直认为这个花园自成一个世界。每一次她听到圣经上有关伊甸园的事时，她就觉得自己好像坐在她的小天地，观察属于她的小小乐园一般。<br>世界从何而来？</p><p>通过苏菲代转卡片的席德是谁？</p><p>她生平第一次开始觉得无论在学校或其他地方，人们关心的都只是一些芝麻琐事罢了。世上还有更重要的事有待解答，这些事比学校所上的任何科目都更重要。</p><p>遗憾的是，当我们成长时，不仅习惯了有地心引力这回事，同时也很快地习惯了世上的一切。<br>这世界就像魔术师从他的帽子里拉出的一只白兔。</p><p>“你太习惯这个世界了，才会对任何事情都不感到惊奇。”</p><p>要有好奇心</p><p>劳力工作都由奴隶担任，因此市民有充分的闲暇，可以将所有时间都投注在政治与文化上,从神话的思考模式发展到以经验与理性为基础的思考模式</p><p>苏菲发现哲学这门课程更有趣了，因为她可运用自己的常识来理解这些哲学思想，而无须凭借她在学校学到的知识</p><p>大自然的积木必须是永恒的，因为没有一件事物会来自虚无</p><p>算命者试图预测某些事实上极不可测的事物</p><p>如果你信基督教或伊斯兰教，这就叫“信仰”，但如果你相信占星术或十三号星期五不吉利，就是迷信！</p><p>黑格尔的辩证。相信人类认知的基础代代不同，因此世间并没有‘永恒的真理’，没有‘永久的理性’。哲学唯一可以确切掌握的一个定点就是历史。</p>]]></content>
     
     
       
