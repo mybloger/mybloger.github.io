@@ -18,6 +18,12 @@ const ap = new APlayer({
         lrc: 'images/Let Her Go-Passenger.lrc'
       },
       {
+        name: '太阳照常升起',
+        artist: '久石譲',
+        url: 'http://music.163.com/song/media/outer/url?id=441722.mp3',
+        cover: 'http://p3.music.126.net/drqGdK7zgW7B7IFl4lWpoQ==/109951163369835547.jpg'
+      },
+      {
         name: '保 留',
         artist: '黄义达',
         url: 'http://music.163.com/song/media/outer/url?id=26084247.mp3',
@@ -59,6 +65,13 @@ const ap = new APlayer({
         lrc: 'images/Chasing The Wind-Josiah James.lrc'
       },
       {
+        name: '奔赴星空',
+        artist: '尹昔眠',
+        url: 'https://sharefs.yun.kugou.com/202105091508/d0311120bf16be66a4842d15218f7ace/KGTX/CLTX001/2ffef99b09b1636ebb229023ef59b7ae.mp3',
+        cover: 'http://imge.kugou.com/stdmusic/150/20210402/20210402114314135880.jpg',
+        lrc: 'images/奔赴星空-尹昔眠.lrc'
+      },
+      {
         name: '坠落星空',
         artist: '小星星Aurora',
         url: 'http://music.163.com/song/media/outer/url?id=1351520305.mp3',
@@ -71,6 +84,13 @@ const ap = new APlayer({
         url: 'http://music.163.com/song/media/outer/url?id=298258.mp3',
         cover: 'http://p4.music.126.net/-U2K8GKlASCSXK0cRre1gA==/109951163188718762.jpg',
         lrc: 'images/吴哥窟-吴雨霏.lrc'
+      },
+      {
+        name: '悬崖之上',
+        artist: '周深',
+        url: 'https://sharefs.yun.kugou.com/202105291906/8af4de3aa1a212331cf653c031971f2b/KGTX/CLTX001/ab256a0c2d6d17ced67ee0fccdf8fd4f.mp3',
+        cover: 'http://imge.kugou.com/stdmusic/150/20210424/20210424114416517267.jpg',
+        lrc: 'images/悬崖之上-周深.lrc'
       }
     ]
 });
