@@ -67,7 +67,7 @@ const ap = new APlayer({
       {
         name: '奔赴星空',
         artist: '尹昔眠',
-        url: 'https://sharefs.yun.kugou.com/202105091508/d0311120bf16be66a4842d15218f7ace/KGTX/CLTX001/2ffef99b09b1636ebb229023ef59b7ae.mp3',
+        url: 'https://sharefs.yun.kugou.com/202105300937/5e1c3f9a6e8ed551f097d559537bdeb4/KGTX/CLTX001/5742da79d2d630cd54ecc8f9d94f4d78.mp3',
         cover: 'http://imge.kugou.com/stdmusic/150/20210402/20210402114314135880.jpg',
         lrc: 'images/奔赴星空-尹昔眠.lrc'
       },
