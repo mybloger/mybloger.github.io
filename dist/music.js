@@ -91,6 +91,12 @@ const ap = new APlayer({
         url: 'https://sharefs.yun.kugou.com/202105291906/8af4de3aa1a212331cf653c031971f2b/KGTX/CLTX001/ab256a0c2d6d17ced67ee0fccdf8fd4f.mp3',
         cover: 'http://imge.kugou.com/stdmusic/150/20210424/20210424114416517267.jpg',
         lrc: 'images/悬崖之上-周深.lrc'
-      }
+      },
+      {
+        name: '在此拥抱',
+        artist: 'NA',
+        url: 'https://sharefs.yun.kugou.com/202105300934/43509ca81fd5488a259912e745f87718/KGTX/CLTX001/48f8c84be99a38043478fcc8785b5d77.mp3',
+        cover: 'http://imge.kugou.com/stdmusic/150/20201215/20201215192102367757.jpg',
+        }
     ]
 });
