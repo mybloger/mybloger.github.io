@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-26T01:18:36.990Z</updated>
+  <updated>2021-08-26T02:16:46.638Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,25 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>again</title>
+    <title>What matters with Life.</title>
     <link href="http://example.com/p/93a15bfc.html"/>
     <id>http://example.com/p/93a15bfc.html</id>
     <published>2021-08-26T01:15:48.000Z</published>
-    <updated>2021-08-26T01:18:36.990Z</updated>
+    <updated>2021-08-26T02:16:46.638Z</updated>
     
-    <content type="html"><![CDATA[<p>Just so so!</p>]]></content>
+    <content type="html"><![CDATA[<p>Just so so!</p><p>认真思考，从以下几方面开展行动</p><p>1.专业能力（跨境电商）<br>平台运营，产品开发，网站建设，文案撰写，广告，SNS</p><p>2.运动能力（马拉松）<br>每日一跑，每日一练</p><p>3.专注能力（书法）<br>找师傅，勤练习</p><p>4.表达能力（个人IP）<br>演讲力，PPT，镜头力，写作</p><p>5.阅读能力（读书）<br>阅读，思维模型，读后感</p><p>6.语言能力（语种）<br>英语，法语，西班牙语</p><p>7.游戏能力（玩）<br>LOL，旅游，开车，探店</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;Just so so!&lt;/p&gt;
-</summary>
+&lt;p&gt;认真思考，从以下几方面开展行动&lt;/p&gt;
+&lt;p&gt;1.专业能力（跨境电商）&lt;br&gt;平台运营，产品开发，网站建设，文案撰写，广告，SNS&lt;/p&gt;
+&lt;p&gt;2.运动能力（马拉松）&lt;br&gt;每日一跑，每日一练&lt;/p&gt;
+&lt;p&gt;3.专注能力（书法）&lt;br</summary>
       
     
     
     
     
-    <category term="love" scheme="http://example.com/tags/love/"/>
+    <category term="Project" scheme="http://example.com/tags/Project/"/>
     
   </entry>
   
