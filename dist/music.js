@@ -18,15 +18,9 @@ const ap = new APlayer({
         lrc: 'images/Let Her Go-Passenger.lrc'
       },
       {
-        name: "If you love Her",
-        artist: 'To be frank',
-        url: 'http://music.163.com/song/media/outer/url?id=26284002.mp3',
-        cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
-      },
-      {
         name: '太阳照常升起',
         artist: '久石譲',
-        url: 'http://music.163.com/song/media/outer/url?id=441722.mp3',
+        url: 'http://music.163.com/song/media/outer/url?id=27901046.mp3',
         cover: 'http://p3.music.126.net/drqGdK7zgW7B7IFl4lWpoQ==/109951163369835547.jpg'
       },
       {
