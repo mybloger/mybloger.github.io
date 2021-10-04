@@ -65,6 +65,13 @@ const ap = new APlayer({
          url: 'http://music.163.com/song/media/outer/url?id=549941712.mp3',
          cover: 'https://p2.music.126.net/v1Uk3MbeZ2dlF-Og9FclEQ==/109951163237368778.jpg?param=130y130',
          lrc: 'images/Ruelle-Carry You.lrc'
+      },
+      {
+         name: 'If You Love Her',
+         artist: 'To Be Frank',
+         url: 'http://music.163.com/song/media/outer/url?id=26284002.mp3',
+         cover: 'https://p1.music.126.net/stofV9C6pRJpw57kYVufDQ==/109951163373915782.jpg?param=130y130',
+         lrc: 'images/To Be Frank-If You Love Her.lrc'
       }
     ]
 });
