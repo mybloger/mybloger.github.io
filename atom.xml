@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-27T14:18:13.121Z</updated>
+  <updated>2021-10-04T04:06:00.990Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>获取音乐相关链接文件</title>
+    <link href="http://example.com/p/6772eb56.html"/>
+    <id>http://example.com/p/6772eb56.html</id>
+    <published>2021-10-04T02:54:19.212Z</published>
+    <updated>2021-10-04T04:06:00.990Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h3><p>原来使用刘志进实验室可以很方便的获取相关内容，现在不能用了。<br>就还挺可惜的。<br>为了定期能让自己的网站可以播放希望的音乐，着手去解决这个问题。</p><blockquote><p>本文价值：获取音乐相关链接</p></blockquote><span id="more"></span><p><a href="https://img.wang/image/001.b4QRN"><img src="https://cdn5.maocdn.cn/img/2021/10/04/001.png" alt="001.png"></a></p><h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><p>获得网易云音乐歌词文本，音乐直链接，歌曲封面图片应用于网站上播放使用。</p><h3 id="需求实现"><a href="#需求实现" class="headerlink" title="需求实现"></a>需求实现</h3><p>1.网易云音乐歌词文本<br>通过小工具获取</p><p>下载小插件：网易云歌词下载</p><p>链接：<a href="https://pan.baidu.com/s/176Ws-DN43IxXl-ZiR5wAnw">https://pan.baidu.com/s/176Ws-DN43IxXl-ZiR5wAnw</a><br>提取码：jres<br>以这首歌为例：获得了分享链接如下<br><a href="http://music.163.com/song?id=549941712&amp;userid=58611551">http://music.163.com/song?id=549941712&amp;userid=58611551</a><br>搜索选择UTF-8编码，格式 歌手名-歌名<br><a href="https://img.wang/image/002.b4Z89"><img src="https://cdn5.maocdn.cn/img/2021/10/04/002.png" alt="002.png"></a></p><p>2.音乐直链接<br>分享链接中有song id 和 user id ，我们选择复制song id<br>直链接如下：<br><a href="http://music.163.com/song/media/outer/url?id=549941712.mp3">http://music.163.com/song/media/outer/url?id=549941712.mp3</a><br>浏览器打开显示是这样的，会自动播放音频<br><a href="https://img.wang/image/003.b4SOu"><img src="https://cdn5.maocdn.cn/img/2021/10/04/003.png" alt="003.png"></a></p><p>3.歌曲封面图<br>还是用获得的分享链接在浏览器打开，得到如下<br><a href="https://img.wang/image/004.b4XdX"><img src="https://cdn5.maocdn.cn/img/2021/10/04/004.png" alt="004.png"></a><br>通过搜索源代码中图片尺寸（130x130）可快速获得封面图链接。<br>打开F12 =&gt; Ctrl F =&gt; 130</p><p><a href="https://img.wang/image/005.b4tiA"><img src="https://cdn5.maocdn.cn/img/2021/10/04/005.png" alt="005.png"></a></p><p>点开框中的链接就能得到封面链接<br><a href="https://p1.music.126.net/v1Uk3MbeZ2dlF-Og9FclEQ==/109951163237368778.jpg?param=130y130">https://p1.music.126.net/v1Uk3MbeZ2dlF-Og9FclEQ==/109951163237368778.jpg?param=130y130</a></p><h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>最终有了上面这些链接，我就能放到网站上播放了<br><a href="https://img.wang/image/006.b4ILk"><img src="https://cdn5.maocdn.cn/img/2021/10/04/006.png" alt="006.png"></a></p><p>带歌词的播放效果<br><a href="https://img.wang/image/007.b4NlQ"><img src="https://cdn5.maocdn.cn/img/2021/10/04/007.png" alt="007.png"></a></p><p>音乐是个神奇的东西，你可以不懂乐理，但是不妨碍你喜欢和欣赏。</p><p>~ <strong>End</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;背景：&quot;&gt;&lt;a href=&quot;#背景：&quot; class=&quot;headerlink&quot; title=&quot;背景：&quot;&gt;&lt;/a&gt;背景：&lt;/h3&gt;&lt;p&gt;原来使用刘志进实验室可以很方便的获取相关内容，现在不能用了。&lt;br&gt;就还挺可惜的。&lt;br&gt;为了定期能让自己的网站可以播放希望的音乐，着手去解决这个问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文价值：获取音乐相关链接&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Life" scheme="http://example.com/categories/Life/"/>
+    
+    
+    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
   
   <entry>
     <title>What matters with Life.</title>
