@@ -72,6 +72,6 @@ const ap = new APlayer({
          url: 'http://music.163.com/song/media/outer/url?id=26284002.mp3',
          cover: 'https://p1.music.126.net/stofV9C6pRJpw57kYVufDQ==/109951163373915782.jpg?param=130y130',
          lrc: 'images/To Be Frank-If You Love Her.lrc'
-      }
+      },
     ]
 });
