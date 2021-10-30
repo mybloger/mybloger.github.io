@@ -1990,9 +1990,9 @@ src="https://mpdown.kekenet.com/Sound/Article/kekexdfmw30/01-Youth.mp3">
   <entry>
     <title>《飞鸟集》·Tagore</title>
     <url>/p/bf90ab8.html</url>
-    <content><![CDATA[<p>泰戈尔诗集</p>
+    <content><![CDATA[<p>泰戈尔诗集 I</p>
 <ul>
-<li>326全集<blockquote>
+<li>326全集  【1-110】<blockquote>
 <p>本文价值：和泰戈尔一起看世界</p>
 </blockquote>
 </li>
@@ -2728,12 +2728,75 @@ src="https://mpdown.kekenet.com/Sound/Article/kekexdfmw30/01-Youth.mp3">
 <p>无名之日的感触最接近真实的自己。</p>
 </blockquote>
 <p><img src="https://cdn5.maocdn.cn/img/2021/10/29/116133324_901759837001773_4597059246160190014_n.jpg" alt="116133324_901759837001773_4597059246160190014_n.jpg"></p>
+<hr>
+<h3 id="107"><a href="#107" class="headerlink" title="107"></a><center>107</center></h3><p><em>The echo mocks her origin to prove she is the original.</em></p>
+<p>回声嘲笑她的声源，以证明她才是原声。　</p>
+<blockquote>
+<p>有些东西无须证明，很多证明无知牵强。可以自信但不能自我。</p>
+</blockquote>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/118992498_188226829335504_851059802543800706_n.jpg" alt="118992498_188226829335504_851059802543800706_n.jpg"></p>
+<hr>
+<h3 id="108"><a href="#108" class="headerlink" title="108"></a><center>108</center></h3><p><em>God is ashamed when the prosperous boasts of His special favour.</em></p>
+<p>达人贵胄夸耀上帝的特殊恩惠时，上帝羞愧了。　　　　　　　</p>
+<blockquote>
+<p>上帝说：傻弟弟。你在我面前不值一提，你仅仅是波浪中恰好被卷起的那一朵水花。</p>
+</blockquote>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/117875969_1046868365727822_5734246223883979574_n.jpg" alt="117875969_1046868365727822_5734246223883979574_n.jpg"></p>
+<hr>
+<h3 id="109"><a href="#109" class="headerlink" title="109"></a><center>109</center></h3><p><em>I cast my own shadow upon my path, because I have a lamp that has not been lighted.</em></p>
+<p>我将我自己的影子投射到我的路上，因为我有一盏尚未点燃的灯。　</p>
+<blockquote>
+<p>“灯前亮”总是伴着“灯下黑”。</p>
+</blockquote>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/69316135_419277422035937_6427176202982830344_n.jpg" alt="69316135_419277422035937_6427176202982830344_n.jpg"></p>
+<hr>
+<h3 id="110"><a href="#110" class="headerlink" title="110"></a><center>110</center></h3><p><em>Man goes into the noisy crowed to drown his own clamour of silence.</em></p>
+<p>人走进喧嚣的欢呼，为的是要淹没他们自己无声的呐喊。　</p>
+<blockquote>
+<p>去蹦迪，去宣泄。</p>
+</blockquote>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/47585030_120120135686828_2185340169529215987_n.jpg" alt="47585030_120120135686828_2185340169529215987_n.jpg"></p>
 ]]></content>
       <categories>
         <category>Read</category>
       </categories>
       <tags>
         <tag>诗歌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo新增目录并显示时间线</title>
+    <url>/p/4d20279f.html</url>
+    <content><![CDATA[<p>想法是进行分类，这样主题比较强在专题可以按主题输出。</p>
+<blockquote>
+<p>本文价值：遇见的问题</p>
+</blockquote>
+<span id="more"></span>
+
+<p>看到finisky实现的效果很好，所以参考宝藏博主的文章实现方式。<br>Hexo添加自定义分类菜单项并定制页面布局(简洁版)<br><a href="https://finisky.github.io/customizecategorybyextension/">https://finisky.github.io/customizecategorybyextension/</a></p>
+<h3 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h3><p>1.报错显示err: TypeError: Cannot read property ‘name’ of undefined<br>2.无Njk文件，是swig文件</p>
+<h3 id="照葫芦画瓢。"><a href="#照葫芦画瓢。" class="headerlink" title="照葫芦画瓢。"></a>照葫芦画瓢。</h3><p>####- 快速创建添加自定义菜单项<br>为了排除其他错误，直接用了楼主的类别名</p>
+<blockquote>
+<p>楼市分析: /realestate/ || fas fa-chart-line</p>
+</blockquote>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/1635561835.png" alt="1635561835.png"></p>
+<h4 id="用Hexo扩展生成定制页面"><a href="#用Hexo扩展生成定制页面" class="headerlink" title="- 用Hexo扩展生成定制页面"></a>- 用Hexo扩展生成定制页面</h4><p>写一个Hexo扩展customcategory.js<br>这里需要直接创建一个文件夹，主题类目上有，但hexo下的确没有。</p>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/16355d62234.png" alt="16355d62234.png"></p>
+<p>复制代码然后放到这个文件夹中<br><img src="https://cdn5.maocdn.cn/img/2021/10/30/1635562319.png" alt="1635562319.png"></p>
+<h4 id="创建添加分类页面模板-customcategory-njk"><a href="#创建添加分类页面模板-customcategory-njk" class="headerlink" title="- 创建添加分类页面模板 customcategory.njk"></a>- 创建添加分类页面模板 customcategory.njk</h4><p>这里文件夹显示都是swig结尾的<br><img src="https://cdn5.maocdn.cn/img/2021/10/30/1635562476.png" alt="1635562476.png"></p>
+<p>我不懂代码但是能推测代码要应用相关swig的文件的，所以都改了一下，不知道对错</p>
+<p><img src="https://cdn5.maocdn.cn/img/2021/10/30/1635562614.png" alt="1635562614.png"></p>
+<p>到这应该基本工作完成了。</p>
+<h4 id="运行报错–无解"><a href="#运行报错–无解" class="headerlink" title="- 运行报错–无解"></a>- 运行报错–无解</h4><p><img src="https://cdn5.maocdn.cn/img/2021/10/30/1635562735.png" alt="1635562735.png"></p>
+<p>暂时找不到，是哪个环节出了问题，但是觉得这个需求实现后会很方便，还需要帮忙指教和排查。</p>
+<p>版本信息如下<br>  “name”: “hexo-theme-next”,<br>  “version”: “7.8.0”</p>
+<p>Thanks a lot </p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
