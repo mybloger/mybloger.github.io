@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="通过HEXO第一次接触到了Markdown。给人的第一感觉是很简单，整个版面看上去比较清爽，是我想要的feel。Markdown 可以通过简单、易读易写的文本格式生成结构化的HTML文档，应用广泛。基于HTML的语法可以完全用在Markdown中，当然大部分时候我们更需要用Markdown针对书写的边便捷用法，这里做一个总结。 常用语法1.标题  在句首插入#表示标题，有六种标题。也就是最多可以有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown文本写作">
+<meta property="og:url" content="http://example.com/p/27356af1.html">
+<meta property="og:site_name" content="CHENHUI">
+<meta property="og:description" content="通过HEXO第一次接触到了Markdown。给人的第一感觉是很简单，整个版面看上去比较清爽，是我想要的feel。Markdown 可以通过简单、易读易写的文本格式生成结构化的HTML文档，应用广泛。基于HTML的语法可以完全用在Markdown中，当然大部分时候我们更需要用Markdown针对书写的边便捷用法，这里做一个总结。 常用语法1.标题  在句首插入#表示标题，有六种标题。也就是最多可以有">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-07-14T08:56:51.000Z">
+<meta property="article:modified_time" content="2021-11-26T07:58:06.639Z">
+<meta property="article:author" content="carlos">
+<meta property="article:tag" content="MARKDOWN">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/p/27356af1.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Markdown文本写作 | CHENHUI</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="CHENHUI" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">CHENHUI</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Life is Now</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-diary">
+
+    <a href="/diary/" rel="section"><i class="fas fa-feather fa-fw"></i>Diary</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/p/27356af1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="carlos">
+      <meta itemprop="description" content="Life,Read,Project">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CHENHUI">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown文本写作
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-07-14 16:56:51" itemprop="dateCreated datePublished" datetime="2018-07-14T16:56:51+08:00">2018-07-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-11-26 15:58:06" itemprop="dateModified" datetime="2021-11-26T15:58:06+08:00">2021-11-26</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/p/27356af1.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/27356af1.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>通过HEXO第一次接触到了<a target="_blank" rel="noopener" href="http://www.markdown.cn/">Markdown</a>。给人的第一感觉是很简单，整个版面看上去比较清爽，是我想要的feel。<br>Markdown 可以通过简单、易读易写的文本格式生成结构化的HTML文档，应用广泛。基于HTML的语法可以完全用在Markdown中，当然大部分时候我们更需要用Markdown针对书写的边便捷用法，这里做一个总结。</p>
+<h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><p>1.标题</p>
+<blockquote>
+<p>在句首插入#表示标题，有六种标题。也就是最多可以有6个#号表示最小字号的标题</p>
+</blockquote>
+<p>2.列表</p>
+<blockquote>
+<p>有序列表 数字加英文的点 如 1. 2. 3.<br>无序列表 *+- 这三个任意一种后面文本接空格 </p>
+</blockquote>
+<p>3.引用块</p>
+<blockquote>
+<p>在引用块的句首加&gt;<br>嵌套引用需要缩进 比如第一次嵌套用&gt;&gt;</p>
+</blockquote>
+<p>4.代码块</p>
+<blockquote>
+<p>使用 ``` 进行代码块引用   这里可以接对应的代码语言名Markdown会自行使用对应的背景渲染。<br>行内引用 可以用两个`` 夹住句子</p>
+</blockquote>
+<p>5.链接<br><code>超链接 \[A](网址 &quot;optional title&quot;)</code></p>
+<blockquote>
+<p><code>图片链接 \![A](网址/地址 )</code>  地址也可以用本地路径，可以在makdown文件夹建一个picture文件夹，optional title的鼠标悬停图片上会显示，可不写。</p>
+</blockquote>
+<p>6.强调</p>
+<blockquote>
+<p>在字两边加一个*为<em>斜体</em></p>
+</blockquote>
+<blockquote>
+<p>在字两边加两个**为<strong>粗体</strong></p>
+</blockquote>
+<blockquote>
+<p>在字两边加三个***为<em><strong>粗斜体</strong></em>    记得不要有与字不要有空格</p>
+</blockquote>
+<p>7.分割线</p>
+<blockquote>
+<p>连续三个或以上星号或下划线或减号 都可以生成一个分割线如下</p>
+</blockquote>
+<hr>
+<p>8.反斜杠</p>
+<blockquote>
+<p>Markdown 支持将大部分符号前面加上反斜杠来帮助插入普通的符号</p>
+</blockquote>
+<p>9.居中居右居左</p>
+<blockquote>
+<p>居中<code>&lt;center&gt;文本&lt;/center&gt;</code><br>居右<code>&lt;p align=&quot;right&quot;&gt;文本&lt;/p&gt;</code><br>居左<code>&lt;p align=&quot;left&quot;&gt;文本&lt;/p&gt;</code></p>
+</blockquote>
+<p>10.换行<br><code>&lt;/br&gt;</code>或两个或以上空格</p>
+<h2 id="进阶语法"><a href="#进阶语法" class="headerlink" title="进阶语法"></a>进阶语法</h2><p>1.表格</p>
+<blockquote>
+<p>使用<code>|</code>分隔不同的单元格，使用<code>-</code>分隔表头与其它行<br>右对齐<code>------:</code> ，左对齐 <code>:------</code>居中对齐<code>---:---</code>，默认居中对齐<code>------</code><br>示例：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">日期 |天气 | 心情  </span><br><span class="line">:-- | -:- |---:B | A | C</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th>天气</th>
+<th align="right">心情</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">B</td>
+<td>A</td>
+<td align="right">C</td>
+</tr>
+</tbody></table>
+<p><strong>注意</strong>：这里有个坑，我试了很多次才找出来。<code>：</code>冒号一定要在英文状态下打，不然识别不了。然后<code>-</code>数量不限定，可以一个也可以多个。</p>
+<p>2.图表   </p>
+<blockquote>
+<p>图表有更多代码。参考<a target="_blank" rel="noopener" href="https://xiaozhuanlan.com/topic/3758460291">这里</a><br>这种用的少，需要用的时候可以再来调取用法。</p>
+</blockquote>
+<p>3.字体字号和颜色</p>
+<p><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;</code><br><code>&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;</code><br><code>&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;</code><br><code>&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;color=#0099ff size=72 face=&quot;黑体&quot;&lt;/font&gt;</code><br><code>&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;</code><br><code>&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;</code></p>
+<p>Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3 。颜色是按<a target="_blank" rel="noopener" href="http://www.w3school.com.cn/cssref/css_colorsfull.asp">十六进制颜色值</a>来的。常用的红色（#FF0000）金色（#FFD700）黄色（#FFFF00）</p>
+<p>4.图片居中</p>
+<blockquote>
+<p>居中，在图片引用上一栏加 <code>&lt;div alighn=center&gt;</code> </p>
+</blockquote>
+<blockquote>
+<p>改变图片大小<code>&lt;img src=&quot;./xxx.png 路径&quot; width = &quot;300&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; /&gt;</code>    可能会导致图变形，用的少</p>
+</blockquote>
+<p>5.待办事宜</p>
+<blockquote>
+<p>横框+空格+方括号+空格+文本 通过方括号内加入X来区别已办未办，注意方括号也要有空格。</p>
+</blockquote>
+<ul>
+<li><input disabled="" type="checkbox"> 爬山</li>
+<li><input checked="" disabled="" type="checkbox"> 走向人生巅峰<ul>
+<li><input checked="" disabled="" type="checkbox"> K歌</li>
+</ul>
+</li>
+</ul>
+<h2 id="冷门用法"><a href="#冷门用法" class="headerlink" title="冷门用法"></a>冷门用法</h2><p>1.删除线</p>
+<blockquote>
+<p>使用 ~~ 将要删除文字夹起来。表示删除</p>
+</blockquote>
+<p><del>HAPPYDAY</del> </p>
+<p>2.注脚 </p>
+<blockquote>
+<p>使用 [^footer] 表示注脚，注意一个引用要写两次。如下 </p>
+<blockquote>
+<p><code>玫瑰是什么颜色[^footer1]</code><br><code>[^footer1]: 玫瑰是红的</code>。</p>
+</blockquote>
+</blockquote>
+<p>玫瑰是什么颜色[^footer1]<br>[^footer1]: 玫瑰是红的。 </p>
+<p>3.页内跳转</p>
+<blockquote>
+<p>使用html代码实现页内跳转。在要跳转到的位置定义个锚<code>&lt;span id = &quot;jump&quot;&gt;World&lt;/span&gt;</code>，然后使用<code>[HELLO](#jump)</code>将你好设置为一单击即跳转到WORLD所在位置的效果</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[HELLO](#jump)  </span><br><span class="line">&lt;span id &#x3D; &quot;jump&quot;&gt;World&lt;&#x2F;span&gt;</span><br></pre></td></tr></table></figure>
+
+<p><a href="#jump">HELLO</a><br><span id = "jump">World</span></p>
+<p>4.LateX公式</p>
+<blockquote>
+<p>行内公式：使用两个”$”符号引用公式: $公式$<br>行间公式：使用两对“$$”符号引用公式： $$公式$$<br>这个其实挺复杂，参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/nowgood/p/Latexstart.html">这里</a>。</p>
+</blockquote>
+<p>5.首行缩进</p>
+<blockquote>
+<p>半方大的空白<code>&amp;ensp;或&amp;#8194;</code>【常用】<br>全方大的空白<code>&amp;emsp;或&amp;#8195;</code><br>不断行的空白格<code>&amp;nbsp;或&amp;#160;</code> </p>
+</blockquote>
+<p>间距如下：<br>&ensp;AAA<br>&emsp;AAA<br>&nbsp;AAA</p>
+<p>6.视频嵌套<br><video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg"></p>
+<source id="mp4" src="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+</video>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;video id&#x3D;&quot;video&quot; controls&#x3D;&quot;&quot; preload&#x3D;&quot;none&quot; poster&#x3D;&quot;http:&#x2F;&#x2F;om2bks7xs.bkt.clouddn.com&#x2F;2017-08-26-Markdown-Advance-Video.jpg&quot;&gt;</span><br><span class="line">&lt;source id&#x3D;&quot;mp4&quot; src&#x3D;&quot;http:&#x2F;&#x2F;om2bks7xs.bkt.clouddn.com&#x2F;2017-08-26-Markdown-Advance-Video.mp4&quot; type&#x3D;&quot;video&#x2F;mp4&quot;&gt;</span><br><span class="line">&lt;&#x2F;video&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p>7.音频嵌套<br><audio id="audio" controls="" preload="none"></p>
+<source id="mp3" src="http://oht4nlntk.bkt.clouddn.com/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3">
+</audio>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio id&#x3D;&quot;audio&quot; controls&#x3D;&quot;&quot; preload&#x3D;&quot;none&quot;&gt;</span><br><span class="line">&lt;source id&#x3D;&quot;mp3&quot; src&#x3D;&quot;http:&#x2F;&#x2F;oht4nlntk.bkt.clouddn.com&#x2F;Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3&quot;&gt;</span><br><span class="line">&lt;&#x2F;audio&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>基本用法能解决大部分情景，高阶用法一般和HTML语法整合的多，但是用的少。如果想更好的进阶可以学习一下HTML语法。一个原则，常用的要能熟练内化为自己的潜意识，少用的要收录起来需要时可以最短时间内调用。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="carlos WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="carlos Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/MARKDOWN/" rel="tag"># MARKDOWN</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/p/undefined.html" rel="next" title="Python学习回顾">
+      Python学习回顾 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">常用语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">进阶语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%B7%E9%97%A8%E7%94%A8%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">冷门用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="carlos"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">carlos</p>
+  <div class="site-description" itemprop="description">Life,Read,Project</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/mybloger" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mybloger" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:929523071@qq.com" title="E-Mail → mailto:929523071@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">carlos</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'MQc67RHMr44Q2PYqTWpFTCza-gzGzoHsz',
+      appKey     : 'RtCeTEV1A0QAHIL3PKU6yzeD',
+      placeholder: "Share your idea",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+</body>
+</html>
