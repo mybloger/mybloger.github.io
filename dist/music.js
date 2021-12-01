@@ -30,6 +30,13 @@ const ap = new APlayer({
         cover: 'https://p1.music.126.net/KTH_YKLBLJ-lgZ3UiKtcXg==/620124558108745.jpg?param=130y130',
       },
       {
+        name: "Vale Of Tears",
+        artist: 'Jay Clifford',
+        url: 'http://music.163.com/song/media/outer/url?id=1609689.mp3',
+        lrc: 'Vale Of Tears.lrc',
+        cover: 'https://p1.music.126.net/TlqN5YDUSnP1m6qcgy_nNg==/6669637534295155.jpg?param=130y130',
+      },
+      {
         name: "Count on Me",
         artist: 'Connie Talbot',
         url: 'http://music.163.com/song/media/outer/url?id=25714146.mp3',
@@ -82,42 +89,35 @@ const ap = new APlayer({
         artist: 'Marble Sounds',
         url: 'http://music.163.com/song/media/outer/url?id=26511658.mp3',
         cover: 'http://p4.music.126.net/mRPJzDzQlELlfQ6qSlnItA==/4428832836684306.jpg',
-        lrc: 'images/Ship In The Sand-Marble Sounds.lrc'
+        lrc: 'images/Ship In The Sand-Marble Sounds.lrc',
       },
       {
         name: '我喜欢上你时的内心活动',
         artist: '陈绮贞',
         url: 'http://music.163.com/song/media/outer/url?id=471403427.mp3',
         cover: 'http://p4.music.126.net/AyyxC4stCu-Pm5qa8gaqDQ==/18762066418246617.jpg',
-        lrc: 'images/我喜欢上你时的内心活动-陈绮贞.lrc'
-      },
-      {
-        name: 'Chasing The Wind',
-        artist: 'Josiah James',
-        url: 'http://music.163.com/song/media/outer/url?id=1596241.mp3',
-        cover: 'http://p4.music.126.net/6nthhVQvSEYja3wcNGQ2qw==/1790004930019757.jpg',
-        lrc: 'images/Chasing The Wind-Josiah James.lrc'
+        lrc: 'images/我喜欢上你时的内心活动-陈绮贞.lrc',
       },
       {
         name: 'Natalie',
         artist: 'Milk & Bone',
         url: 'http://music.163.com/song/media/outer/url?id=426852405.mp3',
         cover: 'https://p2.music.126.net/_k93ENwnpVdDMzREnFy0wQ==/109951163109566356.jpg?param=130y130',
-        lrc: 'images/Let Her Go-Passenger.lrc'
+        lrc: 'images/Natalie.lrc',
       },
       {
          name: 'Carry You',
          artist: 'Ruelle / Fleurie',
          url: 'http://music.163.com/song/media/outer/url?id=549941712.mp3',
          cover: 'https://p2.music.126.net/v1Uk3MbeZ2dlF-Og9FclEQ==/109951163237368778.jpg?param=130y130',
-         lrc: 'images/Ruelle-Carry You.lrc'
+         lrc: 'images/Ruelle-Carry You.lrc',
       },
       {
          name: 'If You Love Her',
          artist: 'To Be Frank',
          url: 'http://music.163.com/song/media/outer/url?id=26284002.mp3',
          cover: 'https://p1.music.126.net/stofV9C6pRJpw57kYVufDQ==/109951163373915782.jpg?param=130y130',
-         lrc: 'images/To Be Frank-If You Love Her.lrc'
+         lrc: 'images/To Be Frank-If You Love Her.lrc',
       }
     ]
 });
