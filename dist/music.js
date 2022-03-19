@@ -11,6 +11,20 @@ const ap = new APlayer({
         cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
       },
       {
+        name: "时光",
+        artist: '陈怡男',
+        url: 'http://music.163.com/song/media/outer/url?id=470520280.mp3',
+        cover: 'https://p1.music.126.net/MGAuGy_NdlzBhy-XCrAStA==/109951162896068025.jpg?param=130y130',
+        lrc: 'images/时光.lrc',
+      },
+      {
+        name: "富士山下",
+        artist: '陈奕迅',
+        url: 'http://music.163.com/song/media/outer/url?id=65766.mp3',
+        cover: 'https://p2.music.126.net/PcJq6i7zMcPgudejdn1yeg==/109951163256302356.jpg?param=130y130',
+        lrc: 'images/富士山下.lrc',
+      },
+      {
         name: "Remember Our Summer",
         artist: 'FrogMonster',
         url: 'http://music.163.com/song/media/outer/url?id=1384450197.mp3',
@@ -18,30 +32,25 @@ const ap = new APlayer({
         lrc: 'images/Remember Our Summer.lrc',
       },
       {
-        name: "Memories of You",
-        artist: 'Approaching Nirvana',
-        url: 'http://music.163.com/song/media/outer/url?id=29349792.mp3',
-        cover: 'https://p2.music.126.net/moCH4T0kxyRgpbBVvZ0aVQ==/109951164852363788.jpg?param=130y130',
-      },
-      {
-        name: "Ruhe",
-        artist: 'Schiller',
-        url: 'http://music.163.com/song/media/outer/url?id=3547937.mp3',
-        cover: 'https://p1.music.126.net/KTH_YKLBLJ-lgZ3UiKtcXg==/620124558108745.jpg?param=130y130',
+        name: 'Let Her Go',
+        artist: 'Passenger',
+        url: 'http://music.163.com/song/media/outer/url?id=18161816.mp3',
+        cover: 'http://p3.music.126.net/uYgsk7GFZ_C-dFPjN7V_Hg==/109951163450380228.jpg',
+        lrc: 'images/Let Her Go-Passenger.lrc'
       },
       {
         name: "Vale Of Tears",
         artist: 'Jay Clifford',
         url: 'http://music.163.com/song/media/outer/url?id=1609689.mp3',
-        lrc: 'Vale Of Tears.lrc',
+        lrc: 'images/Vale Of Tears.lrc',
         cover: 'https://p1.music.126.net/TlqN5YDUSnP1m6qcgy_nNg==/6669637534295155.jpg?param=130y130',
       },
       {
-        name: "Count on Me",
-        artist: 'Connie Talbot',
-        url: 'http://music.163.com/song/media/outer/url?id=25714146.mp3',
-        cover: 'https://p1.music.126.net/i6Fp9KR3weENV0KJ93L4RA==/1817492720735649.jpg?param=130y130',
-        lrc: 'images/Count on Me.lrc',
+        name: "When You're Gone",
+        artist: 'Avril Lavigne',
+        url: 'http://music.163.com/song/media/outer/url?id=16432049.mp3',
+        cover: 'https://p1.music.126.net/bWeVVpBK-EzsCTXMsgElcA==/109951163571593842.jpg?param=130y130',
+        lrc: 'images/When You Are Gone.lrc',
       },
       {
         name: "Dragonfly Keeper",
@@ -50,11 +59,11 @@ const ap = new APlayer({
         cover: 'https://p2.music.126.net/EbHCV3eETDGbgzWy7pSOEQ==/109951164854444310.jpg?param=130y130',
       },
       {
-        name: "有些爱情放不下",
-        artist: '唐伯虎Annie',
-        url: 'http://music.163.com/song/media/outer/url?id=545350530.mp3',
-        cover: 'https://p2.music.126.net/jJYYkon6zBj381R02z5odQ==/109951163190140549.jpg?param=130y130',
-        lrc: 'images/有些爱情放不下.lrc',
+        name: "はじまりの歌",
+        artist: 'GloomyAngel 陈怡男',
+        url: 'http://music.163.com/song/media/outer/url?id=1333745434.mp3',
+        cover: 'https://p1.music.126.net/SOF6stww9RzPqV-tpD8H_w==/109951163728717134.jpg?param=130y130',
+        lrc: 'images/はじまりの歌.lrc',
       },
       {
         name: "Trouble I'm In",
@@ -62,13 +71,6 @@ const ap = new APlayer({
         url: 'http://music.163.com/song/media/outer/url?id=29758362.mp3',
         cover: 'https://p1.music.126.net/Wr2o8c5t1XfJyu0QcuDA_Q==/109951165319856288.jpg?param=130y130',
         lrc: 'images/Trouble I am In.lrc',
-      },
-      {
-        name: "Fire",
-        artist: 'Gavin DeGraw',
-        url: 'http://music.163.com/song/media/outer/url?id=28923579.mp3',
-        cover: 'https://p1.music.126.net/LhP8grCPiS1AMY9fXV8xHA==/109951166158577644.jpg?param=130y130',
-        lrc: 'images/Fire.lrc',
       },
       {
         name: "The World Retreats",
@@ -89,7 +91,7 @@ const ap = new APlayer({
         artist: 'Marble Sounds',
         url: 'http://music.163.com/song/media/outer/url?id=26511658.mp3',
         cover: 'http://p4.music.126.net/mRPJzDzQlELlfQ6qSlnItA==/4428832836684306.jpg',
-        lrc: 'images/Ship In The Sand-Marble Sounds.lrc',
+        lrc: 'images/Ship In The Sand.lrc',
       },
       {
         name: '我喜欢上你时的内心活动',
@@ -99,13 +101,6 @@ const ap = new APlayer({
         lrc: 'images/我喜欢上你时的内心活动-陈绮贞.lrc',
       },
       {
-        name: 'Natalie',
-        artist: 'Milk & Bone',
-        url: 'http://music.163.com/song/media/outer/url?id=426852405.mp3',
-        cover: 'https://p2.music.126.net/_k93ENwnpVdDMzREnFy0wQ==/109951163109566356.jpg?param=130y130',
-        lrc: 'images/Natalie.lrc',
-      },
-      {
          name: 'Carry You',
          artist: 'Ruelle / Fleurie',
          url: 'http://music.163.com/song/media/outer/url?id=549941712.mp3',
@@ -113,11 +108,25 @@ const ap = new APlayer({
          lrc: 'images/Ruelle-Carry You.lrc',
       },
       {
+         name: '火车驶向云外，梦安魂于九霄',
+         artist: '刺猬',
+         url: 'http://music.163.com/song/media/outer/url?id=528272281.mp3',
+         cover: 'https://p2.music.126.net/VSRib9gDrSXJEq_1gTfYiw==/109951163102691938.jpg?param=130y130',
+         lrc: 'images/火车驶向云外，梦安魂于九霄.lrc',
+      },
+      {
          name: 'If You Love Her',
          artist: 'To Be Frank',
          url: 'http://music.163.com/song/media/outer/url?id=26284002.mp3',
          cover: 'https://p1.music.126.net/stofV9C6pRJpw57kYVufDQ==/109951163373915782.jpg?param=130y130',
          lrc: 'images/To Be Frank-If You Love Her.lrc',
+      },
+      {
+         name: 'Way Back Into Love',
+         artist: 'Hugh Grant and Drew Barrymore',
+         url: 'http://music.163.com/song/media/outer/url?id=1349946492.mp3',
+         cover: 'https://p1.music.126.net/7Uh3afMddCGf-WRNBylAUQ==/109951163903701291.jpg?param=130y130',
+         lrc: 'images/Way Back Into Love (Demo Version).lrc',
       }
     ]
 });
