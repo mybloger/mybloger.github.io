@@ -4178,4 +4178,27 @@ src="https://mpdown.kekenet.com/Sound/Article/kekexdfmw30/01-Youth.mp3">
 <p>今天看到一句话很好：<br>打不过就加入不是一种妥协，而是一种升维。<br>把不得不做的事变成自己想做的事 让它和你的目标发生关系.</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>模板</title>
+    <url>/p/f6010553.html</url>
+    <content><![CDATA[<p>远程复制剪切出问题解决办法</p>
+<blockquote>
+<p>本文价值：mstsc小问题</p>
+</blockquote>
+<span id="more"></span>
+
+<p><strong>表现</strong>：mstsc 远程桌面的时候，发现本地和远程之间不能够复制和粘贴文本内容，造成了使用上的极大困扰</p>
+<p><strong>排查</strong>：远程的时候明明在“本地资源”里面勾选了“剪贴板”</p>
+<p><strong>原因</strong>：就是因为“rdpclip.exe”这个进程没有正常工作。</p>
+<p><strong>解决办法</strong>：Rdpclip进程重启。</p>
+<p>在服务器上打开任务管理器（Ctrl+Alt+Del或者是Ctrl+Shift+Esc，也可以右键点击任务栏，选择任务管理器打开），查看进程，找到 rdpclip.exe 进程， 关闭此进程，然后点击开始-&gt;运行-&gt;输入“rdpclip.exe ” 并回车，重新运行此程序，也可以在任务管理器里面点击“文件” —“新任务”—输入“rdpclip.exe” 回车执行。<br>这个时本地和远程服务器就可以使用复制和粘贴了</p>
+<p>如果还不行，在客户端也执行上面“解决办法”里面的步骤</p>
+]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
+      <tags>
+        <tag>小问题</tag>
+      </tags>
+  </entry>
 </search>

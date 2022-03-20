@@ -6,6 +6,12 @@ const ap = new APlayer({
     audio: [
       {
         name: "独行",
+        artist: 'A Pure Embrace',
+        url: 'https://1drv.ms/u/s!AnCL1DxlZvgilW4xoImwceOZ2Hcs',
+        cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
+      },
+      {
+        name: "独行",
         artist: 'whtlook',
         url: 'http://music.163.com/song/media/outer/url?id=410710596.mp3',
         cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
