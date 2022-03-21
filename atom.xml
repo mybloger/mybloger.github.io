@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-21T02:40:54.370Z</updated>
+  <updated>2022-03-21T05:38:00.883Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于如何获得本地音乐的外链</title>
+    <link href="http://example.com/p/7eab6194.html"/>
+    <id>http://example.com/p/7eab6194.html</id>
+    <published>2022-03-21T03:55:08.000Z</published>
+    <updated>2022-03-21T05:38:00.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>本地音乐获得网络外链。</p><blockquote><p>本文价值：音乐外链的实现思路</p></blockquote><span id="more"></span><h4 id="问题背景："><a href="#问题背景：" class="headerlink" title="问题背景："></a>问题背景：</h4><p>在了解冥想的过程中发现一个不错的引导音乐，想要下载。但是只有qq音乐有资源但是没外链。网易云音乐个人不能上传。Soundcloud版权问题无法公开，Onedrive也没成功获得有效外链。其它的小网站也不好用。最近通过喜马拉雅解决了问题。</p><h4 id="问题定义"><a href="#问题定义" class="headerlink" title="问题定义"></a>问题定义</h4><p>解决本地音乐获得稳定外链的问题</p><h4 id="所遇阻碍："><a href="#所遇阻碍：" class="headerlink" title="所遇阻碍："></a>所遇阻碍：</h4><ol><li><p>版权原因无法上传到soundcloud这种大网站</p></li><li><p>其它小网站不靠谱</p></li><li><p>一些小工具有各种病毒广告也不放心</p></li></ol><p>实现办法：</p><ol><li><p>下载获得音频</p></li><li><p>上传到喜马拉雅并建立自己的节目单</p></li><li><p>通过技术手段在网页端获得外链</p></li></ol><h4 id="实现步骤："><a href="#实现步骤：" class="headerlink" title="实现步骤："></a>实现步骤：</h4><ol><li><p>音乐资源获得 （通过搜索获得）<br><a href="https://mp3download.to/12en/cVciREhf7pw.html/">https://mp3download.to/12en/cVciREhf7pw.html/</a><br>这个网站基本上是Youtube to Mp3的资源，但是提供各个质量标准的音频，好用。</p></li><li><p>上传喜马拉雅<br>基本步骤：注册账号=》实名认证=》创建节目单=》发布审核 =》上传公开音频成功</p></li><li><p>获得外部链接<br>网页版获得并打开分享链接</p></li></ol><p>复制分享链接并打开<br><a href="https://img.wang/image/oyOF2"><img src="https://cdn5.maocdn.cn/img/2022/03/21/4552b7ba7b533237db81ce8cf64a0000.md.png" alt="4552b7ba7b533237db81ce8cf64a0000.md.png"></a></p><p>通过审查工具获得外链<br><a href="https://img.wang/image/oyQrR"><img src="https://cdn5.maocdn.cn/img/2022/03/21/2.md.png" alt="2.md.png"></a></p><p>右键审查 =》 Network =&gt; Media =&gt;点击音乐的播放  =》获得正在活动的音频文件 =》右键复制链接 Copy LinK Address</p><p>打开这个链接就是外链了<br><a href="https://img.wang/image/oySIB"><img src="https://cdn5.maocdn.cn/img/2022/03/21/-2.md.png" alt="-2.md.png"></a></p><ol start="4"><li>应用链接<br>这样我就可以将这个音乐放到我的播放清单第一首，每天打开网站时先冥想5分钟。</li></ol><p>如你所见</p><p><a href="https://img.wang/image/oyH4H"><img src="https://cdn5.maocdn.cn/img/2022/03/21/music.png" alt="music.png"></a></p><p>Well Done !</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本地音乐获得网络外链。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文价值：音乐外链的实现思路&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="http://example.com/categories/Project/"/>
+    
+    
+    <category term="外链" scheme="http://example.com/tags/%E5%A4%96%E9%93%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于冥想</title>
+    <link href="http://example.com/p/dd6233cf.html"/>
+    <id>http://example.com/p/dd6233cf.html</id>
+    <published>2022-03-21T02:55:08.000Z</published>
+    <updated>2022-03-21T05:38:57.741Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过冥想获得极度专注的能力</p><blockquote><p>本文价值：冥想的两种方式</p></blockquote><span id="more"></span><h4 id="BGM放在前面"><a href="#BGM放在前面" class="headerlink" title="BGM放在前面"></a>BGM放在前面</h4><p>遇见更好的自己</p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://aod.cos.tx.xmcdn.com/storages/c1aa-audiofreehighqps/66/83/GKwRIUEGDX_HACUXJAEtAAcG.m4a"></audio><p>治愈放松修复 （用耳机）</p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/6966696333717572388.mp3"></audio><h4 id="冥想的意义"><a href="#冥想的意义" class="headerlink" title="冥想的意义"></a>冥想的意义</h4><p>科学研究表明，通过这种集中注意力的冥想练习，人大脑皮层表面积增大，大脑灰质变厚，这意味着这种练习可以从物理上让我们变得更加聪明，因为一个人大脑皮层表面积和大脑灰质厚度是影响人聪明程度的因素。<br>我们平时学习各种技能，比如钢琴、游泳、体操等，都会提高相关脑区的神经元密度，促进脑细胞之间的信号沟通，但是这些练习一旦停止，神经元就会开始减少，而冥想带来的改变是持久的。</p><p>一起获得极度专注的能力。</p><h4 id="怎么冥想"><a href="#怎么冥想" class="headerlink" title="怎么冥想"></a>怎么冥想</h4><p>他们这几种方式特别适合不同状态下的自己。<br>方式一适合早上做，意气风发，干劲十足。<br>方式二适合晚上做，缓解疲劳，重获能量。<br>方式三类似方式一，熟悉了后，无需音乐随时开始。</p><p>具体情况：</p><p><strong>方式一：  遇见更好的自己</strong><br>理论基础：穿越平行宇宙，充分想象更好的自己的所见、眼界、五感，最后合二为一穿越过来了。调整能量振频，进入最好版本的你。</p><p><strong>BGM(A Pure Embrace):</strong></p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://aod.cos.tx.xmcdn.com/storages/c1aa-audiofreehighqps/66/83/GKwRIUEGDX_HACUXJAEtAAcG.m4a"></audio><p><strong>BGM说明:</strong></p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/6938366019878538020.mp3"></audio><p><strong>方式二：  治愈放松修复</strong></p><p><strong>理论基础：</strong><br>想象一束能量之光在身体中流动，周身修复带来能量，和身体对话——关注·感恩·重生。</p><p><strong>BGM:</strong></p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/6966696333717572388.mp3"></audio><p><strong>方式三： 冥想+正念+理想蓝图</strong></p><audio id="audio" controls="" preload="none"><source id="mp3" src="https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/6939075128865524488.mp3"></audio><h4 id="参考来源："><a href="#参考来源：" class="headerlink" title="参考来源："></a>参考来源：</h4><p>抖音 @地球哥  @小凡老师  @张诗童</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;通过冥想获得极度专注的能力&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文价值：冥想的两种方式&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Life" scheme="http://example.com/categories/Life/"/>
+    
+    
+    <category term="冥想" scheme="http://example.com/tags/%E5%86%A5%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>远程控制剪切板问题</title>
@@ -456,62 +504,6 @@
     
     
     <category term="阅读" scheme="http://example.com/tags/%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Paypal低费率提现到个人账户或支付宝</title>
-    <link href="http://example.com/p/42b1a631.html"/>
-    <id>http://example.com/p/42b1a631.html</id>
-    <published>2021-05-07T02:20:35.000Z</published>
-    <updated>2021-05-07T07:17:15.797Z</updated>
-    
-    <content type="html"><![CDATA[<p>Paypal收到的款默认需要打到对公银行账户而且是要能收美元的账户。这就有点不方便了嘛，能直接到支付宝就最好了。</p><blockquote><p>本文价值：记录Paypal资金到Wordfirst再转入个人账号全过程操作记录</p></blockquote><span id="more"></span><h2 id="一句话概要："><a href="#一句话概要：" class="headerlink" title="一句话概要："></a>一句话概要：</h2><p>通过绑定Wordfirst港币账户到Paypal进行提现然后通过Wordfirst直接提现到个人银行账户。</p><h2 id="注意要点："><a href="#注意要点：" class="headerlink" title="注意要点："></a>注意要点：</h2><ol><li>美国账户,国内账户要35$ 固定费用，但香港账户免费。 详细查看Paypal<a href="https://www.paypal.com/c2/webapps/mpp/merchant-fees">费用</a>专栏详解。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image.png" alt="Imag.png"></li><li>Wordfirst转账费率比较底，无汇损，费率为千三，次日到账。</li><li>Wordfirs注册时公司名选择拼音还是英文要和paypal保持一致，避免产生不必要的麻烦。</li><li>Paypal首次绑定可能出现问题，需要开case沟通</li><li>Wordfirst提现时新平台可能需要关联账户并上传交易记录，但也还比较方便<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-1.png" alt="Image-1.png"></li></ol><h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><h3 id="申请Wordfirst账户"><a href="#申请Wordfirst账户" class="headerlink" title="申请Wordfirst账户"></a>申请Wordfirst账户</h3><p><a href="https://www.worldfirst.com.cn/cn/">官方网站</a><br>账户类型注意选择企业账户=》<br>填写法人信息=》上传资料 一步步正常操作即可。<br>在注册时记得可以填写邀请码（填了的小伙伴一定大卖，哈哈）：</p><blockquote><p>TS103-13676501507</p></blockquote><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-2.png" alt="Image-2.png"></p><p>这里的话基本信息完成后会收到来自Wordfirst的邮件，并协助通过邮件进行资料提交<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-3.png" alt="Image-3.png"><br>那么主要所需资料，回邮件告知。主要包括下面这些：<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-4.png" alt="Image-4.png"><br>官方处理效率还是比较高的，邮件当日会反馈，次日就可完成审核。</p><h3 id="申请港币账户绑定Paypal"><a href="#申请港币账户绑定Paypal" class="headerlink" title="申请港币账户绑定Paypal"></a>申请港币账户绑定Paypal</h3><h4 id="港币账号"><a href="#港币账号" class="headerlink" title="港币账号"></a>港币账号</h4><p>完成账户申请后，申请港币账户0费用提现<br>（我这里走了弯路，先申请的美元账户，然后发现提现费用要35$,有点高然后才找到这个方案）<br>后台直接创建选择HKD即可<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-5.png" alt="Image-5.png"><br><img src="https://img.maocdn.cn/img/2021/05/07/Image-6.png" alt="Image-6.png"><br>完成后会点击左侧导航栏账户信息查看一会儿Paypal绑定需要的银行信息。<br>长这样的。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-7.png" alt="Image-7.png"></p><h4 id="Paypal绑定账号"><a href="#Paypal绑定账号" class="headerlink" title="Paypal绑定账号"></a>Paypal绑定账号</h4><p>Paypal后台找到绑定银行的入口,有两种方式：<br>1.设置=》账户设置=》资金、银行账户和卡=》绑定<br>2.首页的提现=》提现方式（标准）=&gt;绑定</p><p>选择关联银行账户，默认的是大陆账户<br>我们要选择底部的：<br>关联美国或中国香港特别行政区的银行账户<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-8.png" alt="Image-8.png"><br><img src="https://img.maocdn.cn/img/2021/05/07/Image-9.png" alt="Image-9.png"></p><p>后面一样的，一步步填写信息即可。</p><p>完成后有两种结果：</p><blockquote><p>绑定成功，那恭喜，可以直接跳过后面看下一步。<br>   绑定失败，继续沟通解决。</p></blockquote><p>我收到的提示是“Sorry, we can’t link your bank account right now.”<br>思路是：先核对银行信息是否填写正确，再尝试绑定两次，确认问题出在Paypal后，我们要通过消息中心联系客服。<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-10.png" alt="Image-10.png"><br>几番沟通，然后会打个电话过来（讲的英语是个印度口音的小伙子）确认问题，挂完电话过一会。<br>我换个浏览器再尝试一次，就可以了。<br>（反正是Paypal的技术问题）Paypal论坛也有同样类似的遭遇。</p><h3 id="Paypal提现到Wordfirst"><a href="#Paypal提现到Wordfirst" class="headerlink" title="Paypal提现到Wordfirst"></a>Paypal提现到Wordfirst</h3><p>完成上一步绑定工作，这里就直接安排提现步骤就可以<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-11.png" alt="Image-11.png"><br>用少量金额测试了一下后<br>次日，Wordfirst会收到提现的款项<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-12.png" alt="Image-12.png"></p><h3 id="提现"><a href="#提现" class="headerlink" title="提现"></a>提现</h3><p>提现到银行卡：<br>首页点击提现绑定法人的个人银行卡或企业账户就行啦。<br>提现到支付宝：（进入Worldfirst进入左侧导航栏。点击转账到支付宝）<br>目前专员说是支持amz和ebay的款项提到支付宝</p><p>到此我们顺利的话就已经完成提现了。</p><h3 id="新平台Wordfirst需要上传交易记录"><a href="#新平台Wordfirst需要上传交易记录" class="headerlink" title="新平台Wordfirst需要上传交易记录"></a>新平台Wordfirst需要上传交易记录</h3><p>进入Worldfirst进入左侧导航栏。点击转账到支付宝</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-13.png" alt="Image-13.png"></p><p>但是这里发现额度不够，</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-14.png" alt="Image-14.png"></p><p>按照提示需要在店铺管理中绑定店铺，方便后面上传交易记录<br>这里选择Paypal</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-15.png" alt="Image-15.png"></p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-16.png" alt="Image-16.png"></p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-17.png" alt="Image-17.png"></p><p>需要填写商家号完成绑定。<br>如何找Paypal商家号</p><p><img src="https://img.maocdn.cn/img/2021/05/07/Image-18.png" alt="Image-18.png"></p><p>Paypal下载交易记录<br>其实在Paypal首页创建报告下载近一个月记录即可。</p><p>官方有指导<a href="https://marmot-worldfirst.oss-accelerate.aliyuncs.com/storage/2020/4/28/b5d673f7-17d6-43c0-8f9b-29b9988dac27.pdf">文档</a></p><p>最后将下载的CSV文件上传到Wordfirst<br><img src="https://img.maocdn.cn/img/2021/05/07/Image-19.png" alt="Image-19.png"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Paypal收到的款默认需要打到对公银行账户而且是要能收美元的账户。这就有点不方便了嘛，能直接到支付宝就最好了。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本文价值：记录Paypal资金到Wordfirst再转入个人账号全过程操作记录&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="Project" scheme="http://example.com/categories/Project/"/>
-    
-    
-    <category term="Papal" scheme="http://example.com/tags/Papal/"/>
-    
-    <category term="Wordfirst" scheme="http://example.com/tags/Wordfirst/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Paypal收款相关</title>
-    <link href="http://example.com/p/c142332b.html"/>
-    <id>http://example.com/p/c142332b.html</id>
-    <published>2021-05-06T02:49:27.000Z</published>
-    <updated>2021-05-07T13:13:37.334Z</updated>
-    
-    <content type="html"><![CDATA[<p>Shopify收款涉及到关联平台比较多。<br>Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。</p><blockquote><p>本文价值：记录shopify涉及到的收款相关记录</p></blockquote><span id="more"></span><p>关于shopify通过Paypal获得收款后，如何提现的问题记录。</p><ul><li>选用第三方支付如Wordfirst创建企业账户 （注意账户名和papal一致，如果用的拼音或是英文保持一致）<ul><li>需要的资料有（身份证照片，手持身份证+日期照片，营业执照）提交了次日就能通过  </li></ul></li><li>创建香港账户，美国美元账户</li><li>在papal中绑定账户<ul><li>注意点是首次绑定可能会不成功：提示 “Sorry, we can’t link your bank account right now.”</li><li>Message联系papal客服，描述问题。他们会打电话过来（印度小伙用的英文）联系你确认问题，基本上挂了之后，换个浏览器再绑定，就可以了。</li></ul></li><li>操作提现到Wordfirst上面的账户<ul><li>关于费用：注意点是美国账户要35$ 固定费用，但<strong>香港账户免费</strong> 具体不同地方费率可以查看官方</li><li>所以优先选择香港账户，Papayl会兑换成港币送到香港账户，然后我们通过香港账户直接体现到法人支付宝即可。</li></ul></li></ul><p>2Checkout收到的款发到Paypal是没有再收手续费的，新账户收到的是4.4%+0.3usd</p><p>20210506</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Shopify收款涉及到关联平台比较多。&lt;br&gt;Wordfirst,2CheckOut,Credicard,Paypal 这里作为遇到的问题记录，方便后续查找。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本文价值：记录shopify涉及到的收款相关记录&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="Project" scheme="http://example.com/categories/Project/"/>
-    
-    
-    <category term="Papal" scheme="http://example.com/tags/Papal/"/>
-    
-    <category term="Wordfirst" scheme="http://example.com/tags/Wordfirst/"/>
-    
-    <category term="Shopify" scheme="http://example.com/tags/Shopify/"/>
-    
-    <category term="2Checkout" scheme="http://example.com/tags/2Checkout/"/>
     
   </entry>
   
