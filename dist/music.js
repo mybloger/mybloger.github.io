@@ -5,10 +5,10 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
-        name: "独行",
-        artist: 'A Pure Embrace',
-        url: 'https://1drv.ms/u/s!AnCL1DxlZvgilW4xoImwceOZ2Hcs',
-        cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
+        name: "A Pure Embrace",
+        artist: 'Christopher Lloyd Clarke',
+        url: 'https://aod.cos.tx.xmcdn.com/storages/c1aa-audiofreehighqps/66/83/GKwRIUEGDX_HACUXJAEtAAcG.m4a',
+        cover: 'https://cdn5.maocdn.cn/img/2022/03/21/_20220318212304.th.jpg',
       },
       {
         name: "独行",
