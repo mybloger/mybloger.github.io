@@ -20,8 +20,8 @@ const ap = new APlayer({
         name: "我要你好好的",
         artist: '赵米禾',
         url: 'http://music.163.com/song/media/outer/url?id=1438463386.mp3',
-        cover: '	https://p2.music.126.net/2RYI9redJfjoD7j1VBtwbQ==/109951164971949483.jpg?param=130y130',
-        lrc: '我要你好好的.lrc',
+        cover: 'https://p2.music.126.net/2RYI9redJfjoD7j1VBtwbQ==/109951164971949483.jpg?param=130y130',
+        lrc: 'images/我要你好好的.lrc',
       },
       {
         name: "时光",
