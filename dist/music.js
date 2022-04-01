@@ -17,6 +17,13 @@ const ap = new APlayer({
         cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
       },
       {
+        name: "我要你好好的",
+        artist: '赵米禾',
+        url: 'http://music.163.com/song/media/outer/url?id=1438463386.mp3',
+        cover: '	https://p2.music.126.net/2RYI9redJfjoD7j1VBtwbQ==/109951164971949483.jpg?param=130y130',
+        lrc: '我要你好好的.lrc',
+      },
+      {
         name: "时光",
         artist: '陈怡男',
         url: 'http://music.163.com/song/media/outer/url?id=470520280.mp3',
