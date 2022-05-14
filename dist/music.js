@@ -17,6 +17,13 @@ const ap = new APlayer({
         cover: 'http://p4.music.126.net/K5y9QBRdn273xRcatRf_6A==/109951164595850950.jpg',
       },
       {
+        name: "篇章",
+        artist: '张韶涵 / 王赫野',
+        url: 'http://music.163.com/song/media/outer/url?id=1943043408.mp3',
+        cover: 'http://p1.music.126.net/AzNqKSOWHvnm5bco2kcugA==/109951167358897745.jpg?param=130y130',
+        lrc: 'images/篇章.lrc',
+      },      
+      {
         name: "我要你好好的",
         artist: '赵米禾',
         url: 'http://music.163.com/song/media/outer/url?id=1438463386.mp3',
