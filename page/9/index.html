@@ -202,6 +202,152 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/p/fd9c84af.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="carlos">
+      <meta itemprop="description" content="Work,Life,Other">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CHENHUI">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/p/fd9c84af.html" class="post-title-link" itemprop="url">国内外电商平台爬虫攻防机制</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-08-09 11:46:51" itemprop="dateCreated datePublished" datetime="2018-08-09T11:46:51+08:00">2018-08-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-11-26 15:58:06" itemprop="dateModified" datetime="2021-11-26T15:58:06+08:00">2021-11-26</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/p/fd9c84af.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/fd9c84af.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>电商平台的核心引擎大致分为两块，搜索架构和产品布局，应该说各有各的特色。当然今天的主题是反爬虫机制，电商平台如何能保护好自己的数据，又不影响正常用户体验，所谓当今业界一场持久的攻防博弈。</p>
+<h2 id="一阶爬虫（技术篇）"><a href="#一阶爬虫（技术篇）" class="headerlink" title="一阶爬虫（技术篇）"></a>一阶爬虫（技术篇）</h2><p><strong>应用场景一</strong>：静态结果页，无频率限制，无黑名单。</p>
+<p>攻：直接采用scrapy爬取</p>
+<p>防：nginx层写lua脚本,将爬虫IP加入黑名单，屏蔽一段时间（不提示时间）</p>
+<p><strong>应用场景二</strong>：静态结果页，无频率限制，有黑名单</p>
+<p>攻：使用代理（http proxy、VPN），随机user-agent</p>
+<p>防：加大频率周期,每小时或每天超过一定次数屏蔽IP一段时间（不提示时间）</p>
+<p><strong>应用场景三</strong>：静态结果页，有频率限制，有黑名单</p>
+<p>攻：使用代理，随机1-3秒爬取，爬10秒休息10秒，甚至范围时间爬取，增加机器</p>
+<p>防：当5分钟内请求超过60次，弹出验证码页面，通过验证增加5分钟无限制时间,不通过验证码则屏蔽增加一小时 (时间自拟)</p>
+<p><strong>应用场景四（Amazon）</strong>：静态结果页，有频率限制，有黑名单，有验证码</p>
+<p>攻：python+tesseract验证码识别库模拟训练，或基于tor、crawlera(收费)的中间件（广度遍历IP）</p>
+<p>防：前端异步加载js，动态加密token</p>
+<p><strong>应用场景五（Aliexpress）</strong>：动态结果页，有频率限制，有黑名单，有验证码</p>
+<p>攻：python+Selenium，利用chrome内核加载动态结果页，更推荐用node+hex+ie内核做一个爬取客户端。java程序可以参考《简单破解Java浏览器组件jxbrowser》</p>
+<p>防：见二阶爬虫</p>
+<p>一阶爬虫属于单纯的技术性博弈，下面开始真正的人机交互博弈</p>
+<h2 id="二阶爬虫（进阶篇）"><a href="#二阶爬虫（进阶篇）" class="headerlink" title="二阶爬虫（进阶篇）"></a>二阶爬虫（进阶篇）</h2><p><strong>应用场景六</strong>（PC天猫搜索页）：https，动态结果页，有频率限制，无黑名单，有验证码</p>
+<p>防：基于个性化为主导，提倡用户主动登陆来获取更优质的用户体验。根据购买习惯为用户推荐一些正常促销的商品，如9.9洗发露、沐浴露、茶叶等（威露士经常做），以及一些优质的钻展商品。不但能区别人机，还能搜集用户访问喜好，针对性优化个性化大数据，还可以抵御ddos，可谓一举三得</p>
+<p>攻：搜集刷单账号，用分布式任务</p>
+<p><strong>应用场景七</strong>（生意参谋）：https，React单页面应用，有验证码，LocalStorage，机器学习中间件</p>
+<p>防：生意参谋本身是收费类的官方服务，从内测http过渡到https，而且近期加大对采集行为的打击，直接采取封号警告策略。以增加用户采集成本为限制，约束攻击方收敛性为。</p>
+<p>单页面应用访问是遵循一定正常轨迹的。例如请求：</p>
+<ol>
+<li><p>用户信息获取</p>
+</li>
+<li><p>数据列表1</p>
+</li>
+<li><p>数据列表2</p>
+</li>
+<li><p>数据详情1</p>
+</li>
+</ol>
+<p>…</p>
+<p>针对数据可视化应用，大部分数据是经计算分析得到，并不会经常改变（甚至不变）。那么，数据结果存储入LocalStroage中，不但节省了网络请求加快页面速度（相当于缓存），还能区分用户行为轨迹。</p>
+<p>详细的来说，通过程序编程得到的爬虫，无论是基于url request，还是基于解压webkit（如：jxbrower）。所生成的爬虫对象都是临时对象，那么不会存储LocalStroage数据，因此导致，访问数据页的请求轨迹每次都会是</p>
+<ol>
+<li><p>用户信息获取</p>
+</li>
+<li><p>数据列表1（实际应被存储到LocalStroage）</p>
+</li>
+<li><p>数据列表2（实际应被存储到LocalStroage）</p>
+</li>
+<li><p>数据详情1</p>
+</li>
+</ol>
+<p>…</p>
+<p>而正常用户行为（一直通过浏览器访问重复页面）</p>
+<ol>
+<li><p>用户信息获取</p>
+</li>
+<li><p>数据详情1</p>
+</li>
+</ol>
+<p>… 总之，不会请求LocalStorage里有的</p>
+<p>![生意参谋] (<a target="_blank" rel="noopener" href="http://image.3001.net/images/20170619/14978650932159.png">http://image.3001.net/images/20170619/14978650932159.png</a>)</p>
+<p>加解密的JS代码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">setItem: <span class="function"><span class="keyword">function</span>(<span class="params">e, t</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">void</span> <span class="number">0</span> === t ? <span class="built_in">this</span>.removeItem(e) : (<span class="built_in">localStorage</span>.setItem(e, <span class="built_in">this</span>._serialize(t)),</span><br><span class="line"></span><br><span class="line">                    t)</span><br><span class="line"></span><br><span class="line">                &#125;,</span><br><span class="line"></span><br><span class="line">                getItem: <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">return</span> <span class="built_in">this</span>.deserialize(<span class="built_in">localStorage</span>.getItem(e))</span><br><span class="line"></span><br><span class="line">                &#125;,</span><br></pre></td></tr></table></figure>
+<p>另外，单页面应用是异步加载数据，一个页面中有ABC三类，只有A类需要验证码时用dialog占屏，BC类数据正常显示，爬虫开发时必然考虑不到这些情况，验证码并非强制要求输入（刷新后照常访问）</p>
+<p>还可以分析每天用户请求数，访问习惯等等</p>
+<p>分析用户行为轨迹的方式大致有3种：nginx流量中间件，web controller层拦截器，日志收集(flume + hadoop + sperk)* 。可能基于贝叶斯或决策树分析【实际怎么算只有开发者知道】</p>
+<p>曾经被封过一次, 不是实时性的第二天才被封, 所以应该时 日志离线计算 得出的结果</p>
+<p><img src="http://image.3001.net/images/20170619/14978657516690.png" alt="Spark离线分析系统"></p>
+<p>攻：chrome插件(可获取https流量),另外把页面中的跳转链接记录到数据库中.因为一些链接只需要修改日期或ID等参数就可以复用. 链接中的一些铆点可能就是计算用于轨迹的因素. PS:这也是生意参谋一直警告的方式, 所有行为由读者自行负责, 与本文作者无关。<br><img src="http://image.3001.net/images/20170619/14978656127594.png" alt="B"></p>
+<h2 id="三阶爬虫（反攻篇）"><a href="#三阶爬虫（反攻篇）" class="headerlink" title="三阶爬虫（反攻篇）"></a>三阶爬虫（反攻篇）</h2><p>讲道理攻击方为何需要去爬取电商平台的数据，就为一个目的，逆演算出平台的权重计算，推导出各类合理范围内的指标（配合刷单，刷流量）。从技术层面上，永远是一个相互博弈的过程，如果有人下血本采用半人工，堆机器的方式暴力抓取，也是难以防控的。而且众所周知，电商技术的转化含金量非常高，机器和人工的成本就是九牛一毛，如果你的模型与业务模型擦边，辅助上一些内部渠道，无论是作为商家还是服务商都极快的变现</p>
+<p>因此，反爬虫的最终核心点是要让攻击者不知道自己已经被判定为爬虫了。那么，攻击者只会悠哉的爬取数据，并兴高采烈的开始演算。而从平台方我们的最终目的是为了保护我们的数据和模型，那么关键点就来了。需要是让攻击方获取得数据不具有代表性，模型不可行即可。配合上流量木桶，定位到攻击者，我们将原始数据进行一些离散加工，加入一些噪音，让攻击方往错误的方向上推导模型。最终攻击方讲无法区分哪些数据是可用，那些又是噪音。</p>
+<p>这时候，你会说，如果系统误杀正常用户，给出个一些展示数据错的离谱怎么办。这个度其实很好把握，我们只需要在排名*、成交单数、点击率等此类动态变化的维度加入噪音，不去加工价格、运费、产品详情，即使被程序判定为攻击者，并不影响正常用户的体验</p>
+<p>*本文作者：leopard7777777，转载请注明FreeBuf.COM</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/p/56ba945d.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1009,7 +1155,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">86</span>
+          <span class="site-state-item-count">87</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1022,7 +1168,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">77</span>
+        <span class="site-state-item-count">78</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
